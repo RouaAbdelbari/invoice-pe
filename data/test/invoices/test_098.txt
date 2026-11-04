@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0098
+Issue date: 19 octobre 2025
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Humbert
+
+Items
+- Clavier et souris | qty 4 | unit 3 321,251 | 13 285,004
+
+Subtotal: 13 285,004 TND
+VAT (19%): 2 524,151 TND
+Amount due: 15 809,155 TND
+
+Payment terms: net 45 days. Thank you for your business.

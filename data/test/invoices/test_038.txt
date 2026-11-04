@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0038
+Issue date: July 29, 2025
+
+From: Gharbi Import SA (Sousse, Tunisia) - Tax ID 2694522N/A/M/000
+Bill to: Bouchet
+
+Items
+- Location de camion | qty 8 | unit 378,682 | 3 029,456
+- Livraison express | qty 5 | unit 317,140 | 1 585,700
+- Transport de marchandises | qty 2 | unit 248,435 | 496,870
+- Transport de marchandises | qty 7 | unit 235,083 | 1 645,581
+- Emballage carton | qty 5 | unit 356,114 | 1 780,570
+
+Subtotal: 8 538,177 TND
+VAT (19%): 1 622,254 TND
+Amount due: 10 160,431 TND
+
+Payment terms: net 30 days. Thank you for your business.

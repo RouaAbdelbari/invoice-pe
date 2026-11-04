@@ -1,0 +1,21 @@
+Gharbi Import SA
+87, rue Zoé Diaz, Sousse
+Matricule fiscal : 2694522N/A/M/000
+
+FACTURE N° F-2025-0093
+Date : 6 juillet 2025
+
+Client : Lévy
+573, rue Michèle Renault
+
+Désignation                          Qté      P.U.            Montant
+  Emballage carton                   4  x      210.402  =       841.608
+  Emballage carton                   7  x      165.277  =      1156.939
+  Transport de marchandises          2  x      339.123  =       678.246
+  Livraison express                  7  x      443.846  =      3106.922
+
+Total HT (TND)      : 5783.715
+TVA 19 %             : 1547.235
+Total TTC (TND)     : 7330.950
+
+Conditions : paiement à 15 jours.

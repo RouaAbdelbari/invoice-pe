@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0074
+Issue date: September 5, 2025
+
+From: Khelifi Pro Group (Sousse, Tunisia) - Tax ID 8090293L/A/M/000
+Bill to: Nguyen
+
+Items
+- Palettes | qty 1 | unit 443,555 | 443,555
+
+Subtotal: 443,555 TND
+VAT (19%): 84,275 TND
+Amount due: 527,830 TND
+
+Payment terms: net 45 days. Thank you for your business.

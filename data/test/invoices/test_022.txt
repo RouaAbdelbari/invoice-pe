@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0022
+Issue date: 9 octobre 2025
+
+From: Mejri Trading & Fils (Sousse, Tunisia) - Tax ID 7210606M/A/M/000
+Bill to: Lecoq
+
+Items
+- Nettoyage des locaux | qty 6 | unit 2757.930 | 16547.580
+- Assistance technique | qty 1 | unit 3521.117 | 3521.117
+
+Subtotal: 20068.697 TND
+VAT (13%): 2608.931 TND
+Amount due: 22677.628 TND
+
+Payment terms: net 60 days. Thank you for your business.

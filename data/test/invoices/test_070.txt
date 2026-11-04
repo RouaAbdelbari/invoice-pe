@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0070
+Issue date: 2025-10-24
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Jacques Marty SARL
+
+Items
+- Pièces détachées | qty 10 | unit 355.280 | 3552.800
+- Huile moteur | qty 2 | unit 153.096 | 306.192
+
+Subtotal: 3858.992 TND
+VAT (7%): 270.129 TND
+Amount due: 4129.121 TND
+
+Payment terms: net 45 days. Thank you for your business.

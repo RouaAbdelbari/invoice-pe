@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0086
+Issue date: 20 octobre 2025
+
+From: Gharbi Import SA (Sousse, Tunisia) - Tax ID 2694522N/A/M/000
+Bill to: Pineau S.A.R.L.
+
+Items
+- Stockage mensuel | qty 5 | unit 1 966,423 | 9 832,115
+
+Subtotal: 9 832,115 TND
+VAT (19%): 1 868,102 TND
+Amount due: 11 700,217 TND
+
+Payment terms: net 30 days. Thank you for your business.

@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0076
+Émise le / Issued on: August 16, 2025
+Vendeur / Seller: Mansouri Trading SA, Tunis
+Acheteur / Buyer: Adam Bertrand et Fils
+
+| Article                        | Qté |       Montant |
+| Nettoyage des locaux           |   5 |       497,665 |
+
+| Base imposable / Net amount | 497,665 |
+| Montant TVA / VAT amount    | 84,283 |
+| TOTAL TTC                   | 581,948 |
+Devise : TND

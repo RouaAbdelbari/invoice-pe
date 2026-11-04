@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: F-2025-0068
+Émise le / Issued on: 2025-12-30
+Vendeur / Seller: Mansouri Trading SA, Tunis
+Acheteur / Buyer: Gomez Goncalves S.A.
+
+| Article                        | Qté |       Montant |
+| Formation (journée)            |   5 |       590.970 |
+| Nettoyage des locaux           |   7 |       661.710 |
+
+| Base imposable / Net amount | 1,252.680 |
+| Montant TVA / VAT amount    | 162.848 |
+| TOTAL TTC                   | 1,415.528 |
+Devise : TND

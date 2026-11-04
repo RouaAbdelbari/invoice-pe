@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: D-2025-0002
+Issue date: 2025-10-30
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Dias
+
+Items
+- Maintenance serveur | qty 8 | unit 606.849 | 4,854.792
+- Écran 24 pouces | qty 8 | unit 364.822 | 2,918.576
+- Licence logicielle annuelle | qty 8 | unit 598.364 | 4,786.912
+- Disque SSD 1 To | qty 3 | unit 317.834 | 953.502
+- Disque SSD 1 To | qty 1 | unit 798.187 | 798.187
+
+Subtotal: 14,311.969 TND
+VAT (19%): 3,772.551 TND
+Amount due: 18,084.520 TND
+
+Payment terms: net 45 days. Thank you for your business.

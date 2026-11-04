@@ -1,0 +1,111 @@
+{
+  "seed": 42,
+  "currency": "TND",
+  "vat_rates": [
+    0.19,
+    0.13,
+    0.07
+  ],
+  "suppliers": [
+    {
+      "name": "Hammami Tech SARL",
+      "sector": "informatique",
+      "usual_vat": 0.19,
+      "city": "Nabeul",
+      "tax_id": "1445199T/A/M/000"
+    },
+    {
+      "name": "Ben Salah Distribution Services",
+      "sector": "fournitures",
+      "usual_vat": 0.07,
+      "city": "Nabeul",
+      "tax_id": "8038374H/A/M/000"
+    },
+    {
+      "name": "Khelifi Pro Group",
+      "sector": "logistique",
+      "usual_vat": 0.19,
+      "city": "Sousse",
+      "tax_id": "8090293L/A/M/000"
+    },
+    {
+      "name": "Mansouri Trading SA",
+      "sector": "services",
+      "usual_vat": 0.13,
+      "city": "Tunis",
+      "tax_id": "2556017N/A/M/000"
+    },
+    {
+      "name": "Zouari Tech SUARL",
+      "sector": "energie",
+      "usual_vat": 0.07,
+      "city": "Sfax",
+      "tax_id": "1728977Q/A/M/000"
+    },
+    {
+      "name": "Ferchichi Solutions SARL",
+      "sector": "informatique",
+      "usual_vat": 0.19,
+      "city": "Nabeul",
+      "tax_id": "5918715X/A/M/000"
+    },
+    {
+      "name": "Jaziri Solutions SUARL",
+      "sector": "fournitures",
+      "usual_vat": 0.19,
+      "city": "Bizerte",
+      "tax_id": "2166941B/A/M/000"
+    },
+    {
+      "name": "Gharbi Import SA",
+      "sector": "logistique",
+      "usual_vat": 0.19,
+      "city": "Sousse",
+      "tax_id": "2694522N/A/M/000"
+    },
+    {
+      "name": "Mejri Trading & Fils",
+      "sector": "services",
+      "usual_vat": 0.13,
+      "city": "Sousse",
+      "tax_id": "7210606M/A/M/000"
+    },
+    {
+      "name": "Dridi Distribution Services",
+      "sector": "energie",
+      "usual_vat": 0.07,
+      "city": "Bizerte",
+      "tax_id": "2197935W/A/M/000"
+    },
+    {
+      "name": "Ayari Import SA",
+      "sector": "informatique",
+      "usual_vat": 0.07,
+      "city": "Sousse",
+      "tax_id": "3741438Q/A/M/000"
+    },
+    {
+      "name": "Haddad Pro SUARL",
+      "sector": "fournitures",
+      "usual_vat": 0.07,
+      "city": "Nabeul",
+      "tax_id": "4684531Y/A/M/000"
+    }
+  ],
+  "counts": {
+    "test": 40,
+    "dev": 10,
+    "history": 500,
+    "test_inconsistent": 6,
+    "test_anomalies": 5,
+    "history_anomalies": 23
+  },
+  "fields_to_extract": [
+    "supplier_name",
+    "invoice_date",
+    "net_amount",
+    "vat_amount",
+    "total_amount"
+  ],
+  "ground_truth_rule": "Valeurs telles qu'imprimées sur la facture ; dates au format ISO ; montants avec 3 décimales."
+}

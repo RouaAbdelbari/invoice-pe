@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: D-2025-0020
+Émise le / Issued on: 2025-09-04
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Marques
+
+| Article                        | Qté |       Montant |
+| Location de camion             |   5 |     2,178.245 |
+
+| Base imposable / Net amount | 2,178.245 |
+| Montant TVA / VAT amount    | 413.867 |
+| TOTAL TTC                   | 2,592.112 |
+Devise : TND

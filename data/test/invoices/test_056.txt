@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0056
+Émise le / Issued on: 21/11/2025
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: Muller
+
+| Article                        | Qté |       Montant |
+| Stockage mensuel               |   1 |       210.597 |
+| Palettes                       |   3 |       476.229 |
+| Palettes                       |   9 |     1,825.164 |
+| Transport de marchandises      |   8 |     3,077.360 |
+
+| Base imposable / Net amount | 5,589.350 |
+| Montant TVA / VAT amount    | 1,061.976 |
+| TOTAL TTC                   | 6,651.326 |
+Devise : TND

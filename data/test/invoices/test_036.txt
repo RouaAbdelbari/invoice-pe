@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0036
+Émise le / Issued on: 11/08/2025
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Laroche
+
+| Article                        | Qté |       Montant |
+| Disque SSD 1 To                |  10 |      4450.940 |
+| Clavier et souris              |   2 |       718.926 |
+| Clavier et souris              |   1 |       617.303 |
+| Disque SSD 1 To                |   4 |      3514.232 |
+| Écran 24 pouces                |   9 |      2723.373 |
+
+| Base imposable / Net amount | 12024.774 |
+| Montant TVA / VAT amount    | 2284.707 |
+| TOTAL TTC                   | 14309.481 |
+Devise : TND

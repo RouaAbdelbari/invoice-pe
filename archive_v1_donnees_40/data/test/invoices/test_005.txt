@@ -1,0 +1,21 @@
+Mansouri Trading SA
+3, avenue de Leblanc, Tunis
+Matricule fiscal : 2556017N/A/M/000
+
+FACTURE N° F-2025-0005
+Date : September 22, 2025
+
+Client : Pruvost
+63, rue Gillet
+
+Désignation                          Qté      P.U.            Montant
+  Assistance technique               4  x      208.773  =       835.092
+  Assistance technique               3  x      212.063  =       636.189
+  Prestation de conseil              7  x      222.028  =      1554.196
+  Prestation de conseil              8  x      185.021  =      1480.168
+
+Total HT (TND)      : 4505.645
+TVA 13 %             : 585.734
+Total TTC (TND)     : 5199.948
+
+Conditions : paiement à 15 jours.

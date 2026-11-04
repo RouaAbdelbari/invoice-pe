@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0024
+Émise le / Issued on: August 11, 2025
+Vendeur / Seller: Zouari Tech SUARL, Sfax
+Acheteur / Buyer: Gay
+
+| Article                        | Qté |       Montant |
+| Intervention technicien        |   7 |      1343.090 |
+| Filtres                        |  10 |      1758.230 |
+| Maintenance groupe électrogène |   5 |      1461.920 |
+| Filtres                        |   6 |      1019.010 |
+
+| Base imposable / Net amount | 5582.250 |
+| Montant TVA / VAT amount    | 390.758 |
+| TOTAL TTC                   | 5973.008 |
+Devise : TND

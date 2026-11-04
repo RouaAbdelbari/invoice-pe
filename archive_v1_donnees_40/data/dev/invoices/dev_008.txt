@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: D-2025-0008
+Émise le / Issued on: August 13, 2025
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Girard S.A.S.
+
+| Article                        | Qté |       Montant |
+| Clavier et souris              |   6 |      1934.562 |
+
+| Base imposable / Net amount | 1934.562 |
+| Montant TVA / VAT amount    | 367.567 |
+| TOTAL TTC                   | 2302.129 |
+Devise : TND

@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: D-2025-0008
+Émise le / Issued on: 2025-10-17
+Vendeur / Seller: Haddad Pro SUARL, Nabeul
+Acheteur / Buyer: Faivre SA
+
+| Article                        | Qté |       Montant |
+| Ramette papier A4              |   1 |     3,353.959 |
+| Classeurs (lot de 10)          |   9 |    19,225.647 |
+| Ramette papier A4              |   2 |     4,743.684 |
+| Agrafeuse                      |   1 |     2,382.868 |
+| Cartouche d'encre              |  10 |    26,639.930 |
+
+| Base imposable / Net amount | 56,346.088 |
+| Montant TVA / VAT amount    | 3,944.226 |
+| TOTAL TTC                   | 60,290.314 |
+Devise : TND

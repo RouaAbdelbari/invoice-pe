@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0032
+Émise le / Issued on: 26 octobre 2025
+Vendeur / Seller: Jaziri Solutions SUARL, Bizerte
+Acheteur / Buyer: Navarro
+
+| Article                        | Qté |       Montant |
+| Ramette papier A4              |   3 |     5 124,276 |
+
+| Base imposable / Net amount | 5 124,276 |
+| Montant TVA / VAT amount    | 1 238,311 |
+| TOTAL TTC                   | 6 362,587 |
+Devise : TND

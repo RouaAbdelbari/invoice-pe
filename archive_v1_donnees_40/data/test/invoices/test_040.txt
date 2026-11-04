@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0040
+Émise le / Issued on: December 21, 2025
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: Maillet et Fils
+
+| Article                        | Qté |       Montant |
+| Location de camion             |   1 |       449.617 |
+| Stockage mensuel               |   2 |       537.822 |
+| Emballage carton               |   2 |       371.530 |
+
+| Base imposable / Net amount | 1,358.969 |
+| Montant TVA / VAT amount    | 258.204 |
+| TOTAL TTC                   | 1,617.173 |
+Devise : TND

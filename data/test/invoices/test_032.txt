@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0032
+Émise le / Issued on: 05/07/2025
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Navarro
+
+| Article                        | Qté |       Montant |
+| Palettes                       |   5 |     1,786.575 |
+| Location de camion             |   8 |     3,335.344 |
+| Emballage carton               |   9 |     3,411.693 |
+| Palettes                       |   3 |     1,088.904 |
+
+| Base imposable / Net amount | 9,622.516 |
+| Montant TVA / VAT amount    | 1,828.278 |
+| TOTAL TTC                   | 11,450.794 |
+Devise : TND

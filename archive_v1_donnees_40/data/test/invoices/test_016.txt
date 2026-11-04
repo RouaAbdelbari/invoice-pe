@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0016
+Émise le / Issued on: 26 novembre 2025
+Vendeur / Seller: Jaziri Solutions SUARL, Bizerte
+Acheteur / Buyer: David Gomes S.A.R.L.
+
+| Article                        | Qté |       Montant |
+| Enveloppes (lot de 100)        |   6 |     7 100,268 |
+| Enveloppes (lot de 100)        |   9 |    14 492,601 |
+| Stylos (boîte de 50)           |   8 |     7 719,192 |
+
+| Base imposable / Net amount | 29 312,061 |
+| Montant TVA / VAT amount    | 5 569,292 |
+| TOTAL TTC                   | 34 919,842 |
+Devise : TND

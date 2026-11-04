@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0016
+Émise le / Issued on: 2025-10-04
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: David Gomes S.A.R.L.
+
+| Article                        | Qté |       Montant |
+| Transport de marchandises      |   3 |       767,808 |
+| Stockage mensuel               |   3 |     1 006,767 |
+| Location de camion             |   9 |     2 120,166 |
+
+| Base imposable / Net amount | 3 894,741 |
+| Montant TVA / VAT amount    | 740,001 |
+| TOTAL TTC                   | 4 634,742 |
+Devise : TND

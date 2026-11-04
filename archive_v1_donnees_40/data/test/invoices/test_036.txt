@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0036
+Émise le / Issued on: 2025-09-10
+Vendeur / Seller: Haddad Pro SUARL, Nabeul
+Acheteur / Buyer: Laroche
+
+| Article                        | Qté |       Montant |
+| Classeurs (lot de 10)          |   6 |      9908.358 |
+| Agrafeuse                      |  10 |     18545.560 |
+| Agrafeuse                      |   2 |      2995.528 |
+| Agrafeuse                      |   1 |      2572.097 |
+| Enveloppes (lot de 100)        |   4 |     14642.636 |
+
+| Base imposable / Net amount | 48664.179 |
+| Montant TVA / VAT amount    | 3406.493 |
+| TOTAL TTC                   | 52070.672 |
+Devise : TND

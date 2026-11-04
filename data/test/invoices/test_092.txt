@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: F-2025-0092
+Émise le / Issued on: October 27, 2025
+Vendeur / Seller: Zouari Tech SUARL, Sfax
+Acheteur / Buyer: Raymond
+
+| Article                        | Qté |       Montant |
+| Huile moteur                   |   7 |     1,095.815 |
+| Maintenance groupe électrogène |   3 |     1,114.902 |
+
+| Base imposable / Net amount | 2,210.717 |
+| Montant TVA / VAT amount    | 154.750 |
+| TOTAL TTC                   | 2,365.467 |
+Devise : TND

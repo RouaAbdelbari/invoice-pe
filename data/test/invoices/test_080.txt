@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0080
+Émise le / Issued on: 8 juillet 2025
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Lenoir
+
+| Article                        | Qté |       Montant |
+| Stockage mensuel               |   8 |     2,289.736 |
+
+| Base imposable / Net amount | 2,289.736 |
+| Montant TVA / VAT amount    | 435.050 |
+| TOTAL TTC                   | 2,724.786 |
+Devise : TND

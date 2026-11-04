@@ -1,0 +1,22 @@
+Gharbi Import SA
+735, chemin Ferrand, Sousse
+Matricule fiscal : 2694522N/A/M/000
+
+FACTURE N° F-2025-0077
+Date : 2025-09-30
+
+Client : Martin
+5, chemin de Martineau
+
+Désignation                          Qté      P.U.            Montant
+  Stockage mensuel                   8  x      297.897  =     2,383.176
+  Livraison express                  3  x      187.096  =       561.288
+  Transport de marchandises          4  x      410.452  =     1,641.808
+  Location de camion                 3  x      374.981  =     1,124.943
+  Palettes                          10  x      417.268  =     4,172.680
+
+Total HT (TND)      : 9,883.895
+TVA 19 %             : 1,877.940
+Total TTC (TND)     : 11,761.835
+
+Conditions : paiement à 15 jours.

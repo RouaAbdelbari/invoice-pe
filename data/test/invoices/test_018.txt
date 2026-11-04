@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0018
+Issue date: 2025-08-17
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Étienne
+
+Items
+- Clavier et souris | qty 1 | unit 699.332 | 699.332
+- Licence logicielle annuelle | qty 3 | unit 523.749 | 1,571.247
+
+Subtotal: 2,270.579 TND
+VAT (19%): 431.410 TND
+Amount due: 2,701.989 TND
+
+Payment terms: net 45 days. Thank you for your business.

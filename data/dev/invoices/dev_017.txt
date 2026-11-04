@@ -1,0 +1,20 @@
+Ayari Import SA
+72, boulevard Gilles, Sousse
+Matricule fiscal : 3741438Q/A/M/000
+
+FACTURE N° D-2025-0017
+Date : 22/10/2025
+
+Client : Lesage SARL
+887, boulevard René Breton
+
+Désignation                          Qté      P.U.            Montant
+  Disque SSD 1 To                    2  x   16,167.672  =    32,335.344
+  Disque SSD 1 To                    1  x   12,688.328  =    12,688.328
+  Disque SSD 1 To                    5  x   12,558.712  =    62,793.560
+
+Total HT (TND)      : 107,817.232
+TVA 7 %             : 7,547.206
+Total TTC (TND)     : 115,364.438
+
+Conditions : paiement à 30 jours.

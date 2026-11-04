@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0042
+Issue date: 2025-12-30
+
+From: Zouari Tech SUARL (Sfax, Tunisia) - Tax ID 1728977Q/A/M/000
+Bill to: Dias
+
+Items
+- Filtres | qty 5 | unit 376.891 | 1,884.455
+- Intervention technicien | qty 7 | unit 256.829 | 1,797.803
+- Intervention technicien | qty 10 | unit 435.042 | 4,350.420
+- Huile moteur | qty 9 | unit 233.667 | 2,103.003
+- Huile moteur | qty 2 | unit 186.657 | 373.314
+
+Subtotal: 10,508.995 TND
+VAT (7%): 974.008 TND
+Amount due: 11,483.003 TND
+
+Payment terms: net 15 days. Thank you for your business.

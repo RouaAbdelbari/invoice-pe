@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: D-2025-0010
+Issue date: 20/10/2025
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Legendre SA
+
+Items
+- Maintenance serveur | qty 2 | unit 804.228 | 1,608.456
+- Clavier et souris | qty 4 | unit 472.413 | 1,889.652
+
+Subtotal: 3,498.108 TND
+VAT (19%): 664.641 TND
+Amount due: 4,162.749 TND
+
+Payment terms: net 60 days. Thank you for your business.

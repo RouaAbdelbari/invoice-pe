@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0054
+Issue date: 14 novembre 2025
+
+From: Ayari Import SA (Sousse, Tunisia) - Tax ID 3741438Q/A/M/000
+Bill to: Tanguy S.A.
+
+Items
+- Maintenance serveur | qty 10 | unit 1,471.938 | 14,719.380
+- Ordinateur portable | qty 9 | unit 840.778 | 7,567.002
+- Maintenance serveur | qty 3 | unit 888.449 | 2,665.347
+- Disque SSD 1 To | qty 5 | unit 1,612.946 | 8,064.730
+- Maintenance serveur | qty 6 | unit 1,632.223 | 9,793.338
+
+Subtotal: 42,809.797 TND
+VAT (7%): 2,996.686 TND
+Amount due: 45,636.519 TND
+
+Payment terms: net 45 days. Thank you for your business.

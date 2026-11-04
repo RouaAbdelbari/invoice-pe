@@ -1,0 +1,19 @@
+Gharbi Import SA
+53, rue de Raynaud, Sousse
+Matricule fiscal : 2694522N/A/M/000
+
+FACTURE N° F-2025-0013
+Date : August 8, 2025
+
+Client : Goncalves
+48, avenue Gillet
+
+Désignation                          Qté      P.U.            Montant
+  Emballage carton                   1  x      237,951  =       237,951
+  Livraison express                  9  x      429,516  =     3 865,644
+
+Total HT (TND)      : 4 103,595
+TVA 7 %             : 287,252
+Total TTC (TND)     : 4 390,847
+
+Conditions : paiement à 60 jours.

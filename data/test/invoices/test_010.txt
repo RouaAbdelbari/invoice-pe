@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0010
+Issue date: 14 août 2025
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Chevalier
+
+Items
+- Disque SSD 1 To | qty 2 | unit 636.455 | 1272.910
+- Écran 24 pouces | qty 3 | unit 888.751 | 2666.253
+- Écran 24 pouces | qty 9 | unit 368.135 | 3313.215
+- Maintenance serveur | qty 10 | unit 822.679 | 8226.790
+- Disque SSD 1 To | qty 4 | unit 751.904 | 3007.616
+
+Subtotal: 18486.784 TND
+VAT (19%): 3512.489 TND
+Amount due: 22073.052 TND
+
+Payment terms: net 60 days. Thank you for your business.

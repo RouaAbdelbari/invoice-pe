@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: F-2025-0094
+Issue date: 11 octobre 2025
+
+From: Gharbi Import SA (Sousse, Tunisia) - Tax ID 2694522N/A/M/000
+Bill to: Maillard Daniel SARL
+
+Items
+- Emballage carton | qty 10 | unit 367.384 | 3673.840
+- Livraison express | qty 8 | unit 219.572 | 1756.576
+- Transport de marchandises | qty 9 | unit 155.706 | 1401.354
+- Emballage carton | qty 6 | unit 315.977 | 1895.862
+
+Subtotal: 8727.632 TND
+VAT (19%): 1658.250 TND
+Amount due: 10385.882 TND
+
+Payment terms: net 60 days. Thank you for your business.

@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: D-2025-0002
+Issue date: September 1, 2025
+
+From: Hammami Tech SARL (Nabeul, Tunisia) - Tax ID 1445199T/A/M/000
+Bill to: Perez et Fils
+
+Items
+- Licence logicielle annuelle | qty 5 | unit 150,753 | 753,765
+- Ordinateur portable | qty 5 | unit 130,865 | 654,325
+- Maintenance serveur | qty 6 | unit 169,416 | 1 016,496
+- Écran 24 pouces | qty 3 | unit 187,981 | 563,943
+
+Subtotal: 2 988,529 TND
+VAT (19%): 567,821 TND
+Amount due: 3 556,350 TND
+
+Payment terms: net 30 days. Thank you for your business.

@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0008
+Émise le / Issued on: August 5, 2025
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: Regnier
+
+| Article                        | Qté |       Montant |
+| Location de camion             |   6 |     2,028.258 |
+| Livraison express              |   1 |       408.115 |
+| Transport de marchandises      |   7 |     2,926.210 |
+| Palettes                       |   9 |     1,438.326 |
+
+| Base imposable / Net amount | 6,800.909 |
+| Montant TVA / VAT amount    | 1,292.173 |
+| TOTAL TTC                   | 8,093.082 |
+Devise : TND

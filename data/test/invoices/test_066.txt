@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0066
+Issue date: 2025-12-23
+
+From: Khelifi Pro Group (Sousse, Tunisia) - Tax ID 8090293L/A/M/000
+Bill to: Martineau Henry SARL
+
+Items
+- Palettes | qty 5 | unit 209.599 | 1,047.995
+- Stockage mensuel | qty 6 | unit 204.567 | 1,227.402
+- Stockage mensuel | qty 10 | unit 217.346 | 2,173.460
+- Transport de marchandises | qty 9 | unit 344.132 | 3,097.188
+- Livraison express | qty 4 | unit 422.053 | 1,688.212
+
+Subtotal: 9,234.257 TND
+VAT (19%): 2,139.436 TND
+Amount due: 11,373.693 TND
+
+Payment terms: net 15 days. Thank you for your business.

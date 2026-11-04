@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0050
+Issue date: 6 juillet 2025
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Legendre SA
+
+Items
+- Huile moteur | qty 10 | unit 267,090 | 2 670,900
+- Filtres | qty 2 | unit 392,498 | 784,996
+- Gasoil (litres) | qty 4 | unit 250,790 | 1 003,160
+
+Subtotal: 4 459,056 TND
+VAT (7%): 312,134 TND
+Amount due: 4 771,190 TND
+
+Payment terms: net 30 days. Thank you for your business.

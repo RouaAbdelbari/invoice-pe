@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0060
+Émise le / Issued on: 2025-10-30
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Bodin
+
+| Article                        | Qté |       Montant |
+| Licence logicielle annuelle    |   1 |       687.239 |
+| Clavier et souris              |   1 |       804.884 |
+| Disque SSD 1 To                |   1 |       714.409 |
+
+| Base imposable / Net amount | 2206.532 |
+| Montant TVA / VAT amount    | 419.241 |
+| TOTAL TTC                   | 2625.773 |
+Devise : TND

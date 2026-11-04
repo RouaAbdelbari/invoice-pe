@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: D-2025-0016
+Émise le / Issued on: 23 octobre 2025
+Vendeur / Seller: Ayari Import SA, Sousse
+Acheteur / Buyer: Camus
+
+| Article                        | Qté |       Montant |
+| Disque SSD 1 To                |   6 |    48 377,196 |
+| Clavier et souris              |  10 |   124 453,160 |
+
+| Base imposable / Net amount | 172 830,356 |
+| Montant TVA / VAT amount    | 12 098,125 |
+| TOTAL TTC                   | 184 928,481 |
+Devise : TND

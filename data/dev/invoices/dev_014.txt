@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: D-2025-0014
+Issue date: 4 octobre 2025
+
+From: Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000
+Bill to: Muller
+
+Items
+- Classeurs (lot de 10) | qty 5 | unit 1 984,953 | 9 924,765
+- Ramette papier A4 | qty 3 | unit 1 605,350 | 4 816,050
+- Agrafeuse | qty 7 | unit 1 371,628 | 9 601,396
+
+Subtotal: 24 342,211 TND
+VAT (7%): 1 703,955 TND
+Amount due: 26 046,166 TND
+
+Payment terms: net 45 days. Thank you for your business.

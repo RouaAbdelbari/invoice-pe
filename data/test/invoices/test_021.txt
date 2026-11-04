@@ -1,0 +1,20 @@
+Ferchichi Solutions SARL
+29, avenue Jeannine Bigot, Nabeul
+Matricule fiscal : 5918715X/A/M/000
+
+FACTURE N° F-2025-0021
+Date : July 24, 2025
+
+Client : Brunet et Fils
+18, rue de Normand
+
+Désignation                          Qté      P.U.            Montant
+  Ordinateur portable               10  x      684.788  =      6847.880
+  Clavier et souris                  9  x      433.286  =      3899.574
+  Licence logicielle annuelle        4  x      313.529  =      1254.116
+
+Total HT (TND)      : 12001.570
+TVA 19 %             : 2280.298
+Total TTC (TND)     : 14281.868
+
+Conditions : paiement à 15 jours.

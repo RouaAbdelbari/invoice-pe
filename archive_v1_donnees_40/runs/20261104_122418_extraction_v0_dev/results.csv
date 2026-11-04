@@ -1,0 +1,11 @@
+invoice_id,latency_s,json_strict,json_lenient,schema_ok,required_ok,types_ok,arithmetic_ok,vat_rate_ok,is_valid,supplier_name,invoice_date,net_amount,vat_amount,total_amount,errors
+dev_001,29.36,False,True,True,True,True,True,True,True,Mansouri Trading SA,2025-09-25,1588.122,206.456,1794.578,
+dev_002,15.76,False,True,True,True,True,True,False,False,Ferchichi Solutions SARL,2025-10-30,14311.969,3772.551,18084.52,taux_TVA_inhabituel:0.264
+dev_003,13.1,False,True,True,True,True,False,True,False,Khelifi Pro Group,2025-09-16,9899394.0,1880885.0,11582090.0,HT+TVA!=TTC
+dev_004,14.87,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-10-05,13088.399,2486.796,15575.195,
+dev_005,15.35,False,True,True,True,True,True,True,True,Ayari Import SA,2025-11-19,44004.845,3080.339,47085.184,
+dev_006,15.92,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-11-27,3170.064,221.904,3391.968,
+dev_007,15.2,False,True,True,True,True,True,True,True,Hammami Tech SARL,2025-12-17,1111.964,211.273,1323.237,
+dev_008,18.41,False,True,True,True,True,True,True,True,"Ferchichi Solutions SARL, Nabeul",2025-08-13,1934.562,367.567,2302.129,
+dev_009,15.36,False,True,True,True,True,True,True,True,Zouari Tech SUARL,2025-07-06,4904.785,343.335,5248.12,
+dev_010,15.02,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-10-20,3498.108,664.641,4162.749,

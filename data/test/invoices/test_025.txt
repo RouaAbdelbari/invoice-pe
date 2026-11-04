@@ -1,0 +1,20 @@
+Hammami Tech SARL
+38, rue de Toussaint, Nabeul
+Matricule fiscal : 1445199T/A/M/000
+
+FACTURE N° F-2025-0025
+Date : October 13, 2025
+
+Client : De Sousa Bernard et Fils
+393, rue Élodie Merle
+
+Désignation                          Qté      P.U.            Montant
+  Maintenance serveur                3  x      158,372  =       475,116
+  Disque SSD 1 To                   10  x      188,287  =     1 882,870
+  Écran 24 pouces                    4  x      102,901  =       411,604
+
+Total HT (TND)      : 2 769,590
+TVA 19 %             : 526,222
+Total TTC (TND)     : 3 295,812
+
+Conditions : paiement à 45 jours.

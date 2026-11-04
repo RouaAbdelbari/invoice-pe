@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0034
+Issue date: 29/07/2025
+
+From: Haddad Pro SUARL (Nabeul, Tunisia) - Tax ID 4684531Y/A/M/000
+Bill to: David SARL
+
+Items
+- Ramette papier A4 | qty 8 | unit 3 143,335 | 25 146,680
+
+Subtotal: 25 146,680 TND
+VAT (7%): 1 760,268 TND
+Amount due: 26 906,948 TND
+
+Payment terms: net 15 days. Thank you for your business.

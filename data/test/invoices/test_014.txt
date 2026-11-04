@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0014
+Issue date: 2025-12-13
+
+From: Haddad Pro SUARL (Nabeul, Tunisia) - Tax ID 4684531Y/A/M/000
+Bill to: Riou
+
+Items
+- Classeurs (lot de 10) | qty 4 | unit 1 407,374 | 5 629,496
+
+Subtotal: 5 629,496 TND
+VAT (7%): 394,065 TND
+Amount due: 6 023,561 TND
+
+Payment terms: net 45 days. Thank you for your business.

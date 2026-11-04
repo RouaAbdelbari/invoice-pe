@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0082
+Issue date: October 11, 2025
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Turpin
+
+Items
+- Prestation de conseil | qty 4 | unit 99.441 | 397.764
+
+Subtotal: 397.764 TND
+VAT (13%): 51.709 TND
+Amount due: 449.473 TND
+
+Payment terms: net 45 days. Thank you for your business.

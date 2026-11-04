@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: F-2025-0034
+Issue date: 05/07/2025
+
+From: Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000
+Bill to: David SARL
+
+Items
+- Stylos (boîte de 50) | qty 1 | unit 1740.877 | 1740.877
+- Ramette papier A4 | qty 9 | unit 2732.940 | 24596.460
+- Stylos (boîte de 50) | qty 2 | unit 3521.323 | 7042.646
+- Ramette papier A4 | qty 2 | unit 2004.115 | 4008.230
+
+Subtotal: 37388.213 TND
+VAT (7%): 2617.175 TND
+Amount due: 40005.388 TND
+
+Payment terms: net 15 days. Thank you for your business.

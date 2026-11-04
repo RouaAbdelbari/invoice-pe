@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Dridi Distribution Services",
+  "invoice_date": "12 juillet 2025",
+  "net_amount": 4309664,
+  "vat_amount": 301676,
+  "total_amount": 4611340
+}
+```

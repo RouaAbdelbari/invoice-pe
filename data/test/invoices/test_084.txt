@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0084
+Émise le / Issued on: July 25, 2025
+Vendeur / Seller: Ayari Import SA, Sousse
+Acheteur / Buyer: Gros Reynaud et Fils
+
+| Article                        | Qté |       Montant |
+| Clavier et souris              |   4 |      4750.192 |
+| Maintenance serveur            |   8 |      7377.400 |
+| Clavier et souris              |   7 |      4957.869 |
+
+| Base imposable / Net amount | 17085.461 |
+| Montant TVA / VAT amount    | 1195.982 |
+| TOTAL TTC                   | 18281.443 |
+Devise : TND

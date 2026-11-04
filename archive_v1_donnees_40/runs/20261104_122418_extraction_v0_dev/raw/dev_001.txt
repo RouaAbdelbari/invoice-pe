@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Mansouri Trading SA",
+  "invoice_date": "25 septembre 2025",
+  "net_amount": 1588.122,
+  "vat_amount": 206.456,
+  "total_amount": 1794.578
+}
+```

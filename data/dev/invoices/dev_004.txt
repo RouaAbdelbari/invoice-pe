@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: D-2025-0004
+Émise le / Issued on: 11/10/2025
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Vidal
+
+| Article                        | Qté |       Montant |
+| Maintenance serveur            |   1 |       535,960 |
+| Ordinateur portable            |   3 |     2 524,521 |
+
+| Base imposable / Net amount | 3 060,481 |
+| Montant TVA / VAT amount    | 581,491 |
+| TOTAL TTC                   | 3 641,972 |
+Devise : TND

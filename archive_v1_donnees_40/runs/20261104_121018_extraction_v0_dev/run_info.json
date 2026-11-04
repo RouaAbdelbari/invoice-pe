@@ -1,0 +1,16 @@
+{
+  "run": "20261104_121018_extraction_v0_dev",
+  "stage": "extraction",
+  "dataset": "dev",
+  "n_invoices": 10,
+  "prompt": "extraction_v0",
+  "prompt_sha256_12": "6b3fd7820075",
+  "model": "qwen2.5:7b",
+  "model_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 512
+  },
+  "started_at": "2026-11-04T12:10:18"
+}

@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: F-2025-0046
+Issue date: 8 octobre 2025
+
+From: Haddad Pro SUARL (Nabeul, Tunisia) - Tax ID 4684531Y/A/M/000
+Bill to: Collet Carpentier SA
+
+Items
+- Ramette papier A4 | qty 10 | unit 2937.561 | 29375.610
+- Enveloppes (lot de 100) | qty 9 | unit 2963.435 | 26670.915
+- Agrafeuse | qty 8 | unit 2439.778 | 19518.224
+- Cartouche d'encre | qty 9 | unit 1389.343 | 12504.087
+
+Subtotal: 88068.836 TND
+VAT (7%): 6164.819 TND
+Amount due: 94233.655 TND
+
+Payment terms: net 60 days. Thank you for your business.

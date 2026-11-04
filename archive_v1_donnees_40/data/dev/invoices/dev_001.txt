@@ -1,0 +1,19 @@
+Mansouri Trading SA
+41, rue Regnier, Tunis
+Matricule fiscal : 2556017N/A/M/000
+
+FACTURE N° D-2025-0001
+Date : 25 septembre 2025
+
+Client : Bonnet S.A.R.L.
+36, avenue Paul Sanchez
+
+Désignation                          Qté      P.U.            Montant
+  Assistance technique               7  x       93.414  =       653.898
+  Nettoyage des locaux               8  x      116.778  =       934.224
+
+Total HT (TND)      : 1588.122
+TVA 13 %             : 206.456
+Total TTC (TND)     : 1794.578
+
+Conditions : paiement à 60 jours.

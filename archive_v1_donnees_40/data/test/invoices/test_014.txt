@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0014
+Issue date: August 8, 2025
+
+From: Gharbi Import SA (Sousse, Tunisia) - Tax ID 2694522N/A/M/000
+Bill to: Riou
+
+Items
+- Emballage carton | qty 1 | unit 237.951 | 237.951
+- Livraison express | qty 9 | unit 429.516 | 3,865.644
+
+Subtotal: 4,103.595 TND
+VAT (19%): 779.683 TND
+Amount due: 4,883.278 TND
+
+Payment terms: net 60 days. Thank you for your business.

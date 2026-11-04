@@ -1,0 +1,41 @@
+{
+  "run": "20261104_121018_extraction_v0_dev",
+  "prompt": "extraction_v0",
+  "model": "qwen2.5:7b",
+  "dataset": "dev",
+  "n_invoices": 10,
+  "n_fewshot_excluded": 0,
+  "json_strict_rate": 0.0,
+  "json_lenient_rate": 1.0,
+  "schema_conformance_rate": 1.0,
+  "acc_supplier_name": 0.3,
+  "acc_invoice_date": 0.0,
+  "acc_net_amount": 0.0,
+  "acc_vat_amount": 0.0,
+  "acc_total_amount": 0.0,
+  "acc_all_fields_micro": 0.06,
+  "invoice_exact_match_rate": 0.0,
+  "exact_match_ci95_lo": 0.0,
+  "exact_match_ci95_hi": 0.0,
+  "inconsistency_precision": 0.0,
+  "inconsistency_recall": 0.0,
+  "justified_detections": "0/2",
+  "false_rejections": 2,
+  "error_categories": {
+    "amount_other": 34,
+    "date_wrong": 10,
+    "amount_x1000": 3
+  },
+  "exact_match_by_layout": {
+    "classic_fr": "0/3",
+    "compact": "0/2",
+    "modern_en": "0/3",
+    "table_mixed": "0/2"
+  },
+  "exact_match_by_number_format": {
+    "en": "0/4",
+    "fr": "0/4",
+    "plain": "0/2"
+  },
+  "mean_latency_s": 15.44
+}

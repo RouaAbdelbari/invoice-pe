@@ -1,0 +1,19 @@
+Hammami Tech SARL
+33, rue de Labbé, Nabeul
+Matricule fiscal : 1445199T/A/M/000
+
+FACTURE N° F-2025-0001
+Date : 2025-10-20
+
+Client : Laurent et Fils
+719, rue Morin
+
+Désignation                          Qté      P.U.            Montant
+  Écran 24 pouces                   10  x      143,249  =     1 432,490
+  Maintenance serveur                6  x       95,461  =       572,766
+
+Total HT (TND)      : 2 005,256
+TVA 19 %             : 380,999
+Total TTC (TND)     : 2 386,255
+
+Conditions : paiement à 45 jours.

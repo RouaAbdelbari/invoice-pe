@@ -1,0 +1,12 @@
+# Dépendances figées — projet Prompt Engineering extraction de factures
+# Versions effectivement installées dans .venv (Python 3.12, Windows 11)
+# Installer : pip install -r requirements.txt
+
+ollama==0.6.3
+faker==40.43.0
+psycopg2-binary==2.9.13
+sqlglot==30.25.0
+scikit-learn==1.9.1
+pandas==3.1.0
+scipy==1.18.1
+pytest==9.2.0

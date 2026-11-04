@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0096
+Émise le / Issued on: June 10, 2024
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Jacob Lemonnier S.A.
+
+| Article                        | Qté |       Montant |
+| Transport de marchandises      |   9 |      2788.992 |
+| Livraison express              |   2 |       410.482 |
+| Location de camion             |   1 |       379.631 |
+
+| Base imposable / Net amount | 3579.105 |
+| Montant TVA / VAT amount    | 680.030 |
+| TOTAL TTC                   | 4259.135 |
+Devise : TND

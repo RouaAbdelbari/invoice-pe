@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0090
+Issue date: July 30, 2025
+
+From: Jaziri Solutions SUARL (Bizerte, Tunisia) - Tax ID 2166941B/A/M/000
+Bill to: Barthelemy Martineau S.A.S.
+
+Items
+- Cartouche d'encre | qty 8 | unit 1,152.196 | 9,217.568
+
+Subtotal: 9,217.568 TND
+VAT (19%): 1,751.338 TND
+Amount due: 10,968.906 TND
+
+Payment terms: net 60 days. Thank you for your business.

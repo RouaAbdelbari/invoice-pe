@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0062
+Issue date: 15 septembre 2025
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Diaz Charles S.A.
+
+Items
+- Formation (journée) | qty 8 | unit 169,703 | 1 357,624
+- Traduction | qty 7 | unit 193,398 | 1 353,786
+
+Subtotal: 2 711,410 TND
+VAT (13%): 352,483 TND
+Amount due: 3 063,893 TND
+
+Payment terms: net 15 days. Thank you for your business.

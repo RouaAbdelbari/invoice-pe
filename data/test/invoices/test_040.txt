@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0040
+Émise le / Issued on: 16/12/2025
+Vendeur / Seller: Mejri Trading & Fils, Sousse
+Acheteur / Buyer: Maillet et Fils
+
+| Article                        | Qté |       Montant |
+| Prestation de conseil          |   3 |     6 711,087 |
+
+| Base imposable / Net amount | 6 711,087 |
+| Montant TVA / VAT amount    | 872,441 |
+| TOTAL TTC                   | 7 583,528 |
+Devise : TND

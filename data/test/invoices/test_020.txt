@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0020
+Émise le / Issued on: 2025-10-22
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Faivre SA
+
+| Article                        | Qté |       Montant |
+| Intervention technicien        |   2 |       738.984 |
+| Gasoil (litres)                |   3 |     1,060.209 |
+| Gasoil (litres)                |   5 |       787.195 |
+
+| Base imposable / Net amount | 2,586.388 |
+| Montant TVA / VAT amount    | 181.047 |
+| TOTAL TTC                   | 2,767.435 |
+Devise : TND

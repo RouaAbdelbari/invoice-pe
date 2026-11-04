@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: F-2025-0026
+Issue date: 27/10/2025
+
+From: Mejri Trading & Fils (Sousse, Tunisia) - Tax ID 7210606M/A/M/000
+Bill to: Joseph SARL
+
+Items
+- Formation (journée) | qty 4 | unit 1 715,016 | 6 860,064
+- Nettoyage des locaux | qty 5 | unit 2 634,667 | 13 173,335
+- Prestation de conseil | qty 5 | unit 3 336,463 | 16 682,315
+- Audit qualité | qty 8 | unit 2 648,203 | 21 185,624
+- Nettoyage des locaux | qty 4 | unit 1 317,100 | 5 268,400
+
+Subtotal: 63 169,738 TND
+VAT (13%): 8 212,066 TND
+Amount due: 71 381,804 TND
+
+Payment terms: net 45 days. Thank you for your business.

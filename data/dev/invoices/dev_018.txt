@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: D-2025-0018
+Issue date: 16 novembre 2025
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Fernandez Lopes S.A.R.L.
+
+Items
+- Gasoil (litres) | qty 10 | unit 306.526 | 3,065.260
+- Huile moteur | qty 9 | unit 419.059 | 3,771.531
+- Gasoil (litres) | qty 9 | unit 203.923 | 1,835.307
+- Gasoil (litres) | qty 5 | unit 386.027 | 1,930.135
+- Maintenance groupe électrogène | qty 10 | unit 283.269 | 2,832.690
+
+Subtotal: 13,434.923 TND
+VAT (7%): 940.445 TND
+Amount due: 14,375.368 TND
+
+Payment terms: net 60 days. Thank you for your business.

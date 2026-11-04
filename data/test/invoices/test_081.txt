@@ -1,0 +1,22 @@
+Ferchichi Solutions SARL
+59, boulevard Victoire Martin, Nabeul
+Matricule fiscal : 5918715X/A/M/000
+
+FACTURE N° F-2025-0081
+Date : 12 juillet 2025
+
+Client : Olivier De Oliveira et Fils
+73, boulevard de Bègue
+
+Désignation                          Qté      P.U.            Montant
+  Maintenance serveur                6  x      868.451  =      5210.706
+  Disque SSD 1 To                   10  x      377.592  =      3775.920
+  Ordinateur portable                5  x      493.903  =      2469.515
+  Ordinateur portable                2  x      628.294  =      1256.588
+  Clavier et souris                  7  x      355.531  =      2488.717
+
+Total HT (TND)      : 15201.446
+TVA 19 %             : 2888.275
+Total TTC (TND)     : 18089.721
+
+Conditions : paiement à 30 jours.

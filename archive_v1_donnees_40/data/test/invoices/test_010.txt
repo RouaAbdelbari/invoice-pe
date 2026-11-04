@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0010
+Issue date: 18 octobre 2025
+
+From: Zouari Tech SUARL (Sfax, Tunisia) - Tax ID 1728977Q/A/M/000
+Bill to: Chevalier
+
+Items
+- Intervention technicien | qty 10 | unit 312,731 | 3 127,310
+- Maintenance groupe électrogène | qty 2 | unit 336,137 | 672,274
+- Pièces détachées | qty 1 | unit 304,421 | 304,421
+
+Subtotal: 4 104,005 TND
+VAT (7%): 287,280 TND
+Amount due: 4 391,285 TND
+
+Payment terms: net 15 days. Thank you for your business.

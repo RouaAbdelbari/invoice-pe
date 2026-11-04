@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0078
+Issue date: 24/11/2025
+
+From: Mejri Trading & Fils (Sousse, Tunisia) - Tax ID 7210606M/A/M/000
+Bill to: Millet
+
+Items
+- Nettoyage des locaux | qty 2 | unit 1,865.394 | 3,730.788
+- Nettoyage des locaux | qty 2 | unit 3,468.419 | 6,936.838
+
+Subtotal: 10,667.626 TND
+VAT (13%): 1,386.791 TND
+Amount due: 12,054.417 TND
+
+Payment terms: net 45 days. Thank you for your business.

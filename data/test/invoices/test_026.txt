@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0026
+Issue date: 03/11/2025
+
+From: Mejri Trading & Fils (Sousse, Tunisia) - Tax ID 7210606M/A/M/000
+Bill to: Joseph SARL
+
+Items
+- Audit qualité | qty 10 | unit 2 009,786 | 20 097,860
+
+Subtotal: 20 097,860 TND
+VAT (13%): 3 209,943 TND
+Amount due: 23 307,803 TND
+
+Payment terms: net 30 days. Thank you for your business.

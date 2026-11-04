@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0022
+Issue date: 16/12/2024
+
+From: Hammami Tech SARL (Nabeul, Tunisia) - Tax ID 1445199T/A/M/000
+Bill to: Lecoq
+
+Items
+- Licence logicielle annuelle | qty 5 | unit 201.427 | 1007.135
+- Disque SSD 1 To | qty 2 | unit 220.874 | 441.748
+- Écran 24 pouces | qty 3 | unit 120.072 | 360.216
+
+Subtotal: 1809.099 TND
+VAT (19%): 343.729 TND
+Amount due: 2152.828 TND
+
+Payment terms: net 60 days. Thank you for your business.

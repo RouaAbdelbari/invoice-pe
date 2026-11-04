@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0012
+Émise le / Issued on: 14/11/2025
+Vendeur / Seller: Haddad Pro SUARL, Nabeul
+Acheteur / Buyer: Bousquet
+
+| Article                        | Qté |       Montant |
+| Classeurs (lot de 10)          |   8 |     22419.024 |
+| Enveloppes (lot de 100)        |   2 |      3441.768 |
+| Stylos (boîte de 50)           |   2 |      2900.852 |
+| Cartouche d'encre              |   5 |     18228.205 |
+| Ramette papier A4              |   2 |      3323.832 |
+
+| Base imposable / Net amount | 50313.681 |
+| Montant TVA / VAT amount    | 3521.958 |
+| TOTAL TTC                   | 53835.639 |
+Devise : TND

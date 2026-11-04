@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: F-2025-0004
+Émise le / Issued on: 2025-11-03
+Vendeur / Seller: Mejri Trading & Fils, Sousse
+Acheteur / Buyer: Vasseur
+
+| Article                        | Qté |       Montant |
+| Assistance technique           |   8 |    26 739,784 |
+| Audit qualité                  |   1 |     3 075,044 |
+
+| Base imposable / Net amount | 29 814,828 |
+| Montant TVA / VAT amount    | 3 875,928 |
+| TOTAL TTC                   | 33 690,756 |
+Devise : TND

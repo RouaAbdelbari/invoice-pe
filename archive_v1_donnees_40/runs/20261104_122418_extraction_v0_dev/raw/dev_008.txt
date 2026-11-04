@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Ferchichi Solutions SARL, Nabeul",
+  "invoice_date": "2025-08-13",
+  "net_amount": 1934.562,
+  "vat_amount": 367.567,
+  "total_amount": 2302.129
+}
+```

@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0002
+Issue date: 21 août 2025
+
+From: Zouari Tech SUARL (Sfax, Tunisia) - Tax ID 1728977Q/A/M/000
+Bill to: Rey Bodin S.A.S.
+
+Items
+- Maintenance groupe électrogène | qty 1 | unit 357,663 | 357,663
+- Gasoil (litres) | qty 5 | unit 190,950 | 954,750
+- Huile moteur | qty 8 | unit 275,467 | 2 203,736
+
+Subtotal: 3 516,149 TND
+VAT (7%): 246,130 TND
+Amount due: 3 762,279 TND
+
+Payment terms: net 30 days. Thank you for your business.

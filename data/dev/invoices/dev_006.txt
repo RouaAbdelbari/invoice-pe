@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: D-2025-0006
+Issue date: 16 septembre 2025
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Hubert
+
+Items
+- Prestation de conseil | qty 9 | unit 125.174 | 1,126.566
+
+Subtotal: 1,126.566 TND
+VAT (13%): 146.454 TND
+Amount due: 1,319.698 TND
+
+Payment terms: net 45 days. Thank you for your business.

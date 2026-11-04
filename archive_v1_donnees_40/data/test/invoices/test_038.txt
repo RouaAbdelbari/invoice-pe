@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: F-2025-0038
+Issue date: 2025-10-17
+
+From: Jaziri Solutions SUARL (Bizerte, Tunisia) - Tax ID 2166941B/A/M/000
+Bill to: Bouchet
+
+Items
+- Agrafeuse | qty 4 | unit 1,089.094 | 4,356.376
+- Classeurs (lot de 10) | qty 2 | unit 1,159.082 | 2,318.164
+
+Subtotal: 6,674.540 TND
+VAT (19%): 1,268.163 TND
+Amount due: 7,942.703 TND
+
+Payment terms: net 45 days. Thank you for your business.

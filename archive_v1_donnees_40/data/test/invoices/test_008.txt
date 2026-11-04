@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0008
+Émise le / Issued on: 27 novembre 2025
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Regnier
+
+| Article                        | Qté |       Montant |
+| Huile moteur                   |   8 |      3052.408 |
+
+| Base imposable / Net amount | 3052.408 |
+| Montant TVA / VAT amount    | 259.550 |
+| TOTAL TTC                   | 3311.958 |
+Devise : TND

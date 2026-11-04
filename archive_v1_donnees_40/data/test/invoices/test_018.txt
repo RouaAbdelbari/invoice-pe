@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0018
+Issue date: 2025-11-15
+
+From: Haddad Pro SUARL (Nabeul, Tunisia) - Tax ID 4684531Y/A/M/000
+Bill to: Étienne
+
+Items
+- Cartouche d'encre | qty 3 | unit 3,348.329 | 10,044.987
+- Enveloppes (lot de 100) | qty 3 | unit 1,653.137 | 4,959.411
+- Ramette papier A4 | qty 1 | unit 3,734.433 | 3,734.433
+
+Subtotal: 18,738.831 TND
+VAT (7%): 1,311.718 TND
+Amount due: 20,050.549 TND
+
+Payment terms: net 45 days. Thank you for your business.

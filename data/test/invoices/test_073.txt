@@ -1,0 +1,22 @@
+Zouari Tech SUARL
+668, rue Bertin, Sfax
+Matricule fiscal : 1728977Q/A/M/000
+
+FACTURE N° F-2025-0073
+Date : 7 novembre 2025
+
+Client : Leleu SARL
+240, avenue de Barre
+
+Désignation                          Qté      P.U.            Montant
+  Huile moteur                       5  x      443,257  =     2 216,285
+  Intervention technicien            6  x      189,671  =     1 138,026
+  Filtres                            1  x      324,146  =       324,146
+  Pièces détachées                   3  x      301,124  =       903,372
+  Pièces détachées                   8  x      189,576  =     1 516,608
+
+Total HT (TND)      : 6 098,437
+TVA 7 %             : 426,891
+Total TTC (TND)     : 6 525,328
+
+Conditions : paiement à 60 jours.

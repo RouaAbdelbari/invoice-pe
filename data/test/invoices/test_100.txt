@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: F-2025-0100
+Émise le / Issued on: 2025-12-04
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Vallée
+
+| Article                        | Qté |       Montant |
+| Filtres                        |   1 |     2 955,304 |
+
+| Base imposable / Net amount | 2 955,304 |
+| Montant TVA / VAT amount    | 206,871 |
+| TOTAL TTC                   | 3 162,175 |
+Devise : TND

@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0088
+Émise le / Issued on: 17 décembre 2025
+Vendeur / Seller: Ben Salah Distribution Services, Nabeul
+Acheteur / Buyer: Alexandre
+
+| Article                        | Qté |       Montant |
+| Cartouche d'encre              |   3 |    10 071,825 |
+| Ramette papier A4              |   2 |     4 581,258 |
+| Enveloppes (lot de 100)        |   5 |    10 174,330 |
+| Enveloppes (lot de 100)        |   8 |    25 147,088 |
+
+| Base imposable / Net amount | 49 974,501 |
+| Montant TVA / VAT amount    | 6 496,685 |
+| TOTAL TTC                   | 56 471,186 |
+Devise : TND

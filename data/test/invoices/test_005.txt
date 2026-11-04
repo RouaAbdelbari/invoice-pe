@@ -1,0 +1,22 @@
+Ferchichi Solutions SARL
+3, avenue de Leblanc, Nabeul
+Matricule fiscal : 5918715X/A/M/000
+
+FACTURE N° F-2025-0005
+Date : 20/10/2025
+
+Client : Pruvost
+63, rue Gillet
+
+Désignation                          Qté      P.U.            Montant
+  Écran 24 pouces                   10  x      867.751  =     8,677.510
+  Clavier et souris                  1  x      550.663  =       550.663
+  Ordinateur portable                1  x      894.764  =       894.764
+  Disque SSD 1 To                    9  x      320.172  =     2,881.548
+  Clavier et souris                  7  x      587.562  =     4,112.934
+
+Total HT (TND)      : 17,117.419
+TVA 19 %             : 3,252.310
+Total TTC (TND)     : 20,369.729
+
+Conditions : paiement à 60 jours.

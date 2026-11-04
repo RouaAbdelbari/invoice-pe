@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0004
+Émise le / Issued on: August 10, 2025
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Vasseur
+
+| Article                        | Qté |       Montant |
+| Maintenance groupe électrogène |  10 |      4410.410 |
+| Maintenance groupe électrogène |   2 |       547.018 |
+| Filtres                        |   8 |      3269.280 |
+| Maintenance groupe électrogène |  10 |      2920.470 |
+| Huile moteur                   |   5 |       771.755 |
+
+| Base imposable / Net amount | 11918.933 |
+| Montant TVA / VAT amount    | 834.325 |
+| TOTAL TTC                   | 12753.258 |
+Devise : TND

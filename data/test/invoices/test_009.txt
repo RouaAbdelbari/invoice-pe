@@ -1,0 +1,22 @@
+Haddad Pro SUARL
+69, rue de Fischer, Nabeul
+Matricule fiscal : 4684531Y/A/M/000
+
+FACTURE N° F-2025-0009
+Date : 04/12/2025
+
+Client : Hoareau SA
+rue Leleu
+
+Désignation                          Qté      P.U.            Montant
+  Agrafeuse                          4  x     3219.230  =     12876.920
+  Ramette papier A4                 10  x     3452.118  =     34521.180
+  Enveloppes (lot de 100)            1  x     2536.841  =      2536.841
+  Enveloppes (lot de 100)            6  x     3469.945  =     20819.670
+  Ramette papier A4                  7  x     2163.977  =     15147.839
+
+Total HT (TND)      : 85902.450
+TVA 7 %             : 6013.172
+Total TTC (TND)     : 91915.622
+
+Conditions : paiement à 45 jours.

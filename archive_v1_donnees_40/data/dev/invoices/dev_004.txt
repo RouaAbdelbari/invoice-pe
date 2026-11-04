@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: D-2025-0004
+Émise le / Issued on: 05/10/2025
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Morin S.A.
+
+| Article                        | Qté |       Montant |
+| Maintenance serveur            |   1 |       319.716 |
+| Clavier et souris              |   5 |      4154.100 |
+| Écran 24 pouces                |   8 |      4467.272 |
+| Licence logicielle annuelle    |   7 |      4147.311 |
+
+| Base imposable / Net amount | 13088.399 |
+| Montant TVA / VAT amount    | 2486.796 |
+| TOTAL TTC                   | 15575.195 |
+Devise : TND

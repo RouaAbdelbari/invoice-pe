@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: D-2025-0012
+Émise le / Issued on: 30 octobre 2025
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: Langlois S.A.S.
+
+| Article                        | Qté |       Montant |
+| Livraison express              |   3 |      1299.663 |
+
+| Base imposable / Net amount | 1299.663 |
+| Montant TVA / VAT amount    | 246.936 |
+| TOTAL TTC                   | 1546.599 |
+Devise : TND

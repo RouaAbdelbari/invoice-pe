@@ -1,0 +1,21 @@
+invoice_id,file,invoice_number,supplier_name,invoice_date,net_amount,vat_amount,total_amount,vat_rate,layout,language,date_format,number_format,is_inconsistent,inconsistency_type,anomaly_type
+dev_001,invoices/dev_001.txt,D-2025-0001,Haddad Pro SUARL,2025-07-26,19262.090,1348.346,20610.436,0.07,classic_fr,fr,long_en,fr,False,,
+dev_002,invoices/dev_002.txt,D-2025-0002,Hammami Tech SARL,2025-09-01,2988.529,567.821,3556.350,0.19,modern_en,en,long_en,fr,False,,
+dev_003,invoices/dev_003.txt,D-2025-0003,Khelifi Pro Group,2025-10-18,11124.123,2113.583,13237.706,0.19,compact,fr,dmy_slash,fr,False,,
+dev_004,invoices/dev_004.txt,D-2025-0004,Ferchichi Solutions SARL,2025-10-11,3060.481,581.491,3641.972,0.19,table_mixed,fr/en,dmy_slash,fr,False,,
+dev_005,invoices/dev_005.txt,D-2025-0005,Jaziri Solutions SUARL,2025-10-11,43353.608,8237.186,51590.794,0.19,classic_fr,fr,long_fr,en,False,,
+dev_006,invoices/dev_006.txt,D-2025-0006,Mansouri Trading SA,2025-09-16,1126.566,146.454,1319.698,0.13,modern_en,en,long_fr,en,True,wrong_total,
+dev_007,invoices/dev_007.txt,D-2025-0007,Ayari Import SA,2025-08-10,11799.036,825.933,12624.969,0.07,compact,fr,iso,en,False,,
+dev_008,invoices/dev_008.txt,D-2025-0008,Haddad Pro SUARL,2025-10-17,56346.088,3944.226,60290.314,0.07,table_mixed,fr/en,iso,en,False,,
+dev_009,invoices/dev_009.txt,D-2025-0009,Zouari Tech SUARL,2025-09-11,8121.742,568.522,8690.264,0.07,classic_fr,fr,dmy_slash,plain,False,,
+dev_010,invoices/dev_010.txt,D-2025-0010,Hammami Tech SARL,2025-10-17,1786.417,493.924,2280.341,0.19,modern_en,en,long_en,plain,True,wrong_vat,
+dev_011,invoices/dev_011.txt,D-2025-0011,Gharbi Import SA,2025-12-24,9664.598,1836.274,11500.872,0.19,compact,fr,dmy_slash,plain,False,,
+dev_012,invoices/dev_012.txt,D-2025-0012,Gharbi Import SA,2025-10-30,1299.663,246.936,1546.599,0.19,table_mixed,fr/en,long_fr,plain,False,,
+dev_013,invoices/dev_013.txt,D-2025-0013,Dridi Distribution Services,2025-10-13,1929.174,135.042,2064.216,0.07,classic_fr,fr,dmy_slash,fr,False,,
+dev_014,invoices/dev_014.txt,D-2025-0014,Ben Salah Distribution Services,2025-10-04,24342.211,1703.955,26046.166,0.07,modern_en,en,long_fr,fr,False,,
+dev_015,invoices/dev_015.txt,D-2025-0015,Mansouri Trading SA,2025-08-16,2275.211,295.777,2467.559,0.13,compact,fr,long_en,fr,True,wrong_total,
+dev_016,invoices/dev_016.txt,D-2025-0016,Ayari Import SA,2025-10-23,172830.356,12098.125,184928.481,0.07,table_mixed,fr/en,long_fr,fr,False,,amount_outlier
+dev_017,invoices/dev_017.txt,D-2025-0017,Ayari Import SA,2025-10-22,107817.232,7547.206,115364.438,0.07,classic_fr,fr,dmy_slash,en,False,,amount_outlier
+dev_018,invoices/dev_018.txt,D-2025-0018,Dridi Distribution Services,2025-11-16,13434.923,940.445,14375.368,0.07,modern_en,en,long_fr,en,False,,
+dev_019,invoices/dev_019.txt,D-2025-0019,Dridi Distribution Services,2025-07-12,4309.664,301.676,4611.340,0.07,compact,fr,long_fr,en,False,,
+dev_020,invoices/dev_020.txt,D-2025-0020,Khelifi Pro Group,2025-09-04,2178.245,413.867,2592.112,0.19,table_mixed,fr/en,iso,en,False,,

@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: F-2025-0064
+Émise le / Issued on: 22/10/2025
+Vendeur / Seller: Ayari Import SA, Sousse
+Acheteur / Buyer: Guilbert
+
+| Article                        | Qté |       Montant |
+| Ordinateur portable            |   7 |     5 880,630 |
+| Licence logicielle annuelle    |   6 |     7 745,826 |
+
+| Base imposable / Net amount | 13 626,456 |
+| Montant TVA / VAT amount    | 953,852 |
+| TOTAL TTC                   | 14 580,308 |
+Devise : TND

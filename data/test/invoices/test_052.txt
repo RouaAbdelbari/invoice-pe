@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0052
+Émise le / Issued on: 24 juillet 2025
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Bertin
+
+| Article                        | Qté |       Montant |
+| Gasoil (litres)                |  10 |     2 510,510 |
+| Gasoil (litres)                |  10 |     3 903,560 |
+| Huile moteur                   |   7 |     1 490,454 |
+| Gasoil (litres)                |   5 |     1 506,960 |
+| Pièces détachées               |   7 |     2 443,259 |
+
+| Base imposable / Net amount | 11 854,743 |
+| Montant TVA / VAT amount    | 829,832 |
+| TOTAL TTC                   | 12 684,575 |
+Devise : TND

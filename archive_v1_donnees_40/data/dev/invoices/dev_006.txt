@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: D-2025-0006
+Issue date: 27 novembre 2025
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Collet Carpentier SA
+
+Items
+- Disque SSD 1 To | qty 6 | unit 528.344 | 3,170.064
+
+Subtotal: 3,170.064 TND
+VAT (7%): 221.904 TND
+Amount due: 3,391.968 TND
+
+Payment terms: net 45 days. Thank you for your business.

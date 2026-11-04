@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: F-2025-0044
+Émise le / Issued on: 16/09/2025
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Morin S.A.
+
+| Article                        | Qté |       Montant |
+| Emballage carton               |   2 |       756.102 |
+| Livraison express              |   9 |     3,422.448 |
+| Stockage mensuel               |   4 |       952.276 |
+| Stockage mensuel               |   8 |     2,411.504 |
+| Emballage carton               |   6 |     2,357.064 |
+
+| Base imposable / Net amount | 9,899.394 |
+| Montant TVA / VAT amount    | 1,880.885 |
+| TOTAL TTC                   | 11,780.279 |
+Devise : TND

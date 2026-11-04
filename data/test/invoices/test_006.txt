@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: F-2025-0006
+Issue date: August 31, 2025
+
+From: Gharbi Import SA (Sousse, Tunisia) - Tax ID 2694522N/A/M/000
+Bill to: Pelletier SARL
+
+Items
+- Emballage carton | qty 1 | unit 357.948 | 357.948
+
+Subtotal: 357.948 TND
+VAT (19%): 68.010 TND
+Amount due: 425.958 TND
+
+Payment terms: net 30 days. Thank you for your business.

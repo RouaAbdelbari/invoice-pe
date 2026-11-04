@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0028
+Émise le / Issued on: 2025-07-31
+Vendeur / Seller: Haddad Pro SUARL, Nabeul
+Acheteur / Buyer: Étienne SARL
+
+| Article                        | Qté |       Montant |
+| Agrafeuse                      |  10 |    12,938.630 |
+| Classeurs (lot de 10)          |   3 |     8,112.408 |
+| Cartouche d'encre              |   6 |    14,415.660 |
+
+| Base imposable / Net amount | 35,466.698 |
+| Montant TVA / VAT amount    | 2,482.669 |
+| TOTAL TTC                   | 37,949.367 |
+Devise : TND

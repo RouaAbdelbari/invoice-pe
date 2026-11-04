@@ -1,0 +1,19 @@
+Zouari Tech SUARL
+46, rue Simone Boutin, Sfax
+Matricule fiscal : 1728977Q/A/M/000
+
+FACTURE N° F-2025-0069
+Date : 21 décembre 2025
+
+Client : Laurent
+rue Charlotte Louis
+
+Désignation                          Qté      P.U.            Montant
+  Huile moteur                       3  x      272.557  =       817.671
+  Maintenance groupe électrogène     1  x      237.058  =       237.058
+
+Total HT (TND)      : 1054.729
+TVA 7 %             : 73.831
+Total TTC (TND)     : 1128.560
+
+Conditions : paiement à 30 jours.

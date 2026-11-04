@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: F-2025-0048
+Émise le / Issued on: 18/10/2025
+Vendeur / Seller: Ben Salah Distribution Services, Nabeul
+Acheteur / Buyer: Girard S.A.S.
+
+| Article                        | Qté |       Montant |
+| Classeurs (lot de 10)          |   7 |     14897.211 |
+| Enveloppes (lot de 100)        |   4 |      7476.140 |
+| Enveloppes (lot de 100)        |   5 |     13656.645 |
+
+| Base imposable / Net amount | 36029.996 |
+| Montant TVA / VAT amount    | 2522.100 |
+| TOTAL TTC                   | 38552.096 |
+Devise : TND

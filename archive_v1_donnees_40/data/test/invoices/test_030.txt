@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0030
+Issue date: 23 décembre 2025
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Lecomte
+
+Items
+- Licence logicielle annuelle | qty 6 | unit 357.500 | 2,145.000
+- Clavier et souris | qty 6 | unit 793.989 | 4,763.934
+- Ordinateur portable | qty 3 | unit 610.902 | 1,832.706
+
+Subtotal: 8,741.640 TND
+VAT (19%): 1,660.912 TND
+Amount due: 10,402.552 TND
+
+Payment terms: net 60 days. Thank you for your business.

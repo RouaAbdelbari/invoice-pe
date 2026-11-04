@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: F-2025-0058
+Issue date: 2025-08-01
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Maillard Carre S.A.S.
+
+Items
+- Pièces détachées | qty 10 | unit 371.171 | 3711.710
+- Intervention technicien | qty 4 | unit 430.650 | 1722.600
+- Maintenance groupe électrogène | qty 3 | unit 182.044 | 546.132
+
+Subtotal: 5980.442 TND
+VAT (7%): 418.631 TND
+Amount due: 6399.073 TND
+
+Payment terms: net 45 days. Thank you for your business.

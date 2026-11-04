@@ -1,0 +1,22 @@
+Zouari Tech SUARL
+82, rue de Thibault, Sfax
+Matricule fiscal : 1728977Q/A/M/000
+
+FACTURE N° D-2025-0009
+Date : 11/09/2025
+
+Client : Bourgeois Lefebvre S.A.S.
+64, boulevard Seguin
+
+Désignation                          Qté      P.U.            Montant
+  Intervention technicien            3  x      364.305  =      1092.915
+  Filtres                            4  x      181.568  =       726.272
+  Filtres                           10  x      207.767  =      2077.670
+  Pièces détachées                   8  x      179.396  =      1435.168
+  Intervention technicien            7  x      398.531  =      2789.717
+
+Total HT (TND)      : 8121.742
+TVA 7 %             : 568.522
+Total TTC (TND)     : 8690.264
+
+Conditions : paiement à 15 jours.

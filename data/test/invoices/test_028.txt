@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0028
+Émise le / Issued on: 2025-12-08
+Vendeur / Seller: Zouari Tech SUARL, Sfax
+Acheteur / Buyer: Étienne SARL
+
+| Article                        | Qté |       Montant |
+| Intervention technicien        |   2 |       523,922 |
+| Intervention technicien        |  10 |     1 552,640 |
+| Pièces détachées               |   3 |       973,488 |
+| Maintenance groupe électrogène |   6 |     1 729,878 |
+
+| Base imposable / Net amount | 4 779,928 |
+| Montant TVA / VAT amount    | 334,595 |
+| TOTAL TTC                   | 5 114,523 |
+Devise : TND

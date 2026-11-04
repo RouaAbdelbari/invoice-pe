@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0020
+Émise le / Issued on: 7 juillet 2025
+Vendeur / Seller: Ben Salah Distribution Services, Nabeul
+Acheteur / Buyer: Faivre SA
+
+| Article                        | Qté |       Montant |
+| Stylos (boîte de 50)           |   3 |     10858.419 |
+| Classeurs (lot de 10)          |   3 |      3782.208 |
+| Enveloppes (lot de 100)        |   9 |     33201.027 |
+| Classeurs (lot de 10)          |   5 |     12173.885 |
+
+| Base imposable / Net amount | 60015.539 |
+| Montant TVA / VAT amount    | 4201.088 |
+| TOTAL TTC                   | 64216.627 |
+Devise : TND

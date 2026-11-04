@@ -1,0 +1,5 @@
+Extrais les informations suivantes de la facture ci-dessous : nom du fournisseur, date de la facture, montant HT, montant de la TVA, montant TTC.
+Réponds en JSON avec les clés : supplier_name, invoice_date, net_amount, vat_amount, total_amount.
+
+Facture :
+{invoice}

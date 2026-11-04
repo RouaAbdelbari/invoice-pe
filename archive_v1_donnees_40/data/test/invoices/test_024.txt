@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: F-2025-0024
+Émise le / Issued on: May 1, 2024
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Gay
+
+| Article                        | Qté |       Montant |
+| Disque SSD 1 To                |   8 |     4 699,304 |
+| Clavier et souris              |   3 |     2 065,068 |
+| Maintenance serveur            |   1 |       446,202 |
+| Écran 24 pouces                |  10 |     6 554,090 |
+
+| Base imposable / Net amount | 13 764,664 |
+| Montant TVA / VAT amount    | 2 615,286 |
+| TOTAL TTC                   | 16 379,950 |
+Devise : TND

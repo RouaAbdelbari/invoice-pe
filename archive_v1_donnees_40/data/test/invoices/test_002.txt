@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: F-2025-0002
+Issue date: 2025-07-19
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Rey Bodin S.A.S.
+
+Items
+- Assistance technique | qty 8 | unit 83.151 | 665.208
+- Nettoyage des locaux | qty 3 | unit 107.425 | 322.275
+- Assistance technique | qty 8 | unit 101.709 | 813.672
+- Audit qualité | qty 3 | unit 143.661 | 430.983
+
+Subtotal: 2232.138 TND
+VAT (13%): 290.178 TND
+Amount due: 2522.316 TND
+
+Payment terms: net 45 days. Thank you for your business.

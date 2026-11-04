@@ -1,0 +1,20 @@
+Ferchichi Solutions SARL
+949, boulevard Ribeiro, Nabeul
+Matricule fiscal : 5918715X/A/M/000
+
+FACTURE N° F-2025-0057
+Date : 02/12/2025
+
+Client : Lemaître Jacquet S.A.
+3, rue Franck Bernier
+
+Désignation                          Qté      P.U.            Montant
+  Ordinateur portable                7  x      838.064  =      5866.448
+  Disque SSD 1 To                    2  x      538.137  =      1076.274
+  Disque SSD 1 To                    3  x      441.625  =      1324.875
+
+Total HT (TND)      : 8267.597
+TVA 19 %             : 1570.843
+Total TTC (TND)     : 9940.248
+
+Conditions : paiement à 30 jours.

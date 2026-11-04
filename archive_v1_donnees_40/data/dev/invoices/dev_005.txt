@@ -1,0 +1,22 @@
+Ayari Import SA
+30, rue Amélie Aubry, Sousse
+Matricule fiscal : 3741438Q/A/M/000
+
+FACTURE N° D-2025-0005
+Date : 19/11/2025
+
+Client : Cordier Vallée S.A.R.L.
+96, avenue de Meyer
+
+Désignation                          Qté      P.U.            Montant
+  Clavier et souris                  8  x    1 171,093  =     9 368,744
+  Écran 24 pouces                    9  x      666,885  =     6 001,965
+  Licence logicielle annuelle        8  x    1 309,254  =    10 474,032
+  Maintenance serveur               10  x    1 411,785  =    14 117,850
+  Licence logicielle annuelle        6  x      673,709  =     4 042,254
+
+Total HT (TND)      : 44 004,845
+TVA 7 %             : 3 080,339
+Total TTC (TND)     : 47 085,184
+
+Conditions : paiement à 45 jours.

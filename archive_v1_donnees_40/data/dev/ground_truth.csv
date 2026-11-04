@@ -1,0 +1,11 @@
+invoice_id,file,invoice_number,supplier_name,invoice_date,net_amount,vat_amount,total_amount,vat_rate,layout,language,date_format,number_format,is_inconsistent,inconsistency_type,anomaly_type
+dev_001,invoices/dev_001.txt,D-2025-0001,Mansouri Trading SA,2025-09-25,1588.122,206.456,1794.578,0.13,classic_fr,fr,long_fr,plain,False,,
+dev_002,invoices/dev_002.txt,D-2025-0002,Ferchichi Solutions SARL,2025-10-30,14311.969,3772.551,18084.520,0.19,modern_en,en,iso,en,True,wrong_vat,
+dev_003,invoices/dev_003.txt,D-2025-0003,Khelifi Pro Group,2025-09-16,9899.394,1880.885,11582.090,0.19,compact,fr,dmy_slash,en,True,wrong_total,
+dev_004,invoices/dev_004.txt,D-2025-0004,Ferchichi Solutions SARL,2025-10-05,13088.399,2486.796,15575.195,0.19,table_mixed,fr/en,dmy_slash,plain,False,,
+dev_005,invoices/dev_005.txt,D-2025-0005,Ayari Import SA,2025-11-19,44004.845,3080.339,47085.184,0.07,classic_fr,fr,dmy_slash,fr,False,,
+dev_006,invoices/dev_006.txt,D-2025-0006,Ferchichi Solutions SARL,2025-11-27,3170.064,221.904,3391.968,0.07,modern_en,en,long_fr,en,False,,unusual_vat
+dev_007,invoices/dev_007.txt,D-2025-0007,Hammami Tech SARL,2025-12-17,1111.964,211.273,1323.237,0.19,compact,fr,dmy_slash,en,False,,
+dev_008,invoices/dev_008.txt,D-2025-0008,Ferchichi Solutions SARL,2025-08-13,1934.562,367.567,2302.129,0.19,table_mixed,fr/en,long_en,plain,False,,
+dev_009,invoices/dev_009.txt,D-2025-0009,Zouari Tech SUARL,2025-07-06,4904.785,343.335,5248.120,0.07,classic_fr,fr,long_fr,fr,False,,
+dev_010,invoices/dev_010.txt,D-2025-0010,Ferchichi Solutions SARL,2025-10-20,3498.108,664.641,4162.749,0.19,modern_en,en,dmy_slash,en,False,,
