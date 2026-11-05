@@ -1,0 +1,19 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Secrets — ne jamais commiter
+.env
+
+# Modèles entraînés (optionnel selon préférence)
+# models/*.joblib
+
+# Exports BI
+bi/
+
+# Éditeurs
+.vscode/
+*.swp

@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: X-2025-0006
+Issue date: 31 juillet 2025
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Lamy S.A.S.
+
+Items
+- Prestation de conseil | qty 9 | unit 218,455 | 1 966,095
+- Traduction | qty 6 | unit 98,214 | 589,284
+- Audit qualité | qty 10 | unit 161,143 | 1 611,430
+- Nettoyage des locaux | qty 3 | unit 156,871 | 470,613
+- Nettoyage des locaux | qty 10 | unit 94,682 | 946,820
+
+Subtotal: 5 584,242 TND
+VAT (13%): 725,951 TND
+Amount due: 6 310,193 TND
+
+Payment terms: net 15 days. Thank you for your business.

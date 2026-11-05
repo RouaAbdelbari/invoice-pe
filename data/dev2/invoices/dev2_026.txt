@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: X-2025-0026
+Émise le / Issued on: 2025-11-14
+Vendeur / Seller: Hammami Tech SARL, Nabeul
+Acheteur / Buyer: Meyer
+
+| Article                        | Qté |       Montant |
+| Disque SSD 1 To                |  10 |      1210.070 |
+| Ordinateur portable            |   7 |       924.609 |
+
+| Base imposable / Net amount | 2134.679 |
+| Montant TVA / VAT amount    | 405.589 |
+| TOTAL TTC                   | 2540.268 |
+Devise : TND

@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Haddad Pro SUARL",
+  "invoice_date": "29 juillet 2025",
+  "net_amount": 22307.332,
+  "vat_amount": 1561.513,
+  "total_amount": 23868.845
+}
+```

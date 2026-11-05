@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: X-2025-0014
+Émise le / Issued on: 2025-08-10
+Vendeur / Seller: Ferchichi Solutions SARL, Nabeul
+Acheteur / Buyer: Barbe
+
+| Article                        | Qté |       Montant |
+| Clavier et souris              |  10 |     7 750,820 |
+| Écran 24 pouces                |   2 |     1 344,942 |
+| Licence logicielle annuelle    |   9 |     6 756,732 |
+
+| Base imposable / Net amount | 15 852,494 |
+| Montant TVA / VAT amount    | 3 011,974 |
+| TOTAL TTC                   | 18 864,468 |
+Devise : TND

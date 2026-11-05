@@ -34,26 +34,24 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-import ollama
-
 from validate import parse_json, validate
+from llm import call_llm as _llm_call, MODEL_OPTIONS, TIMEOUT_SENTINEL
 
 ROOT = Path(__file__).resolve().parent.parent      # dossier invoice-pe
 
 
 def sha256_file(path: Path) -> str:
-    """SHA-256 hex d'un fichier, pour traçabilité de la vérité terrain."""
     import hashlib
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-# Paramètres du modèle : IDENTIQUES pour toutes les versions de prompt — NE PAS MODIFIER
-MODEL_OPTIONS = {
-    "temperature": 0,
-    "seed": 42,
-    "num_ctx": 4096,
-    "num_predict": 512,
-}
+def call_llm(model: str, prompt: str) -> tuple[str, float]:
+    result = _llm_call(prompt, model=model)
+    if result.timed_out:
+        raise SystemExit(
+            f"LLM timeout ({result.elapsed}s). Vérifiez qu'Ollama tourne."
+        )
+    return result.text, result.elapsed
 
 RESULT_FIELDS = ["invoice_id", "latency_s", "json_strict", "json_lenient",
                  "schema_ok", "required_ok", "types_ok", "arithmetic_ok", "vat_rate_ok", "is_valid",
@@ -128,13 +126,16 @@ def load_fewshot(name: str, exclude_ids: set[str] | None = None) -> tuple[str, l
 
 
 # ---------------------------------------------------------------------------
-# Appel LLM
+# Appel LLM (délégué à llm.py — gestion du timeout 180 s)
 # ---------------------------------------------------------------------------
 
 def call_llm(model: str, prompt: str) -> tuple[str, float]:
-    start = time.perf_counter()
-    response = ollama.generate(model=model, prompt=prompt, options=MODEL_OPTIONS)
-    return response["response"], round(time.perf_counter() - start, 2)
+    result = _llm_call(prompt, model=model)
+    if result.timed_out:
+        raise SystemExit(
+            f"LLM timeout ({result.elapsed}s). Vérifiez qu'Ollama tourne."
+        )
+    return result.text, result.elapsed
 
 
 # ---------------------------------------------------------------------------
@@ -264,8 +265,9 @@ def run_once(args, template: str, prompt_hash: str, files: list[Path],
 
 def main():
     parser = argparse.ArgumentParser(description="Extraction des factures par LLM")
-    parser.add_argument("--set", choices=["dev", "test"], default="dev",
-                        help="jeu de factures (test exige --confirm-test)")
+    parser.add_argument("--set", default="dev",
+                        help="jeu de factures : 'dev', 'test', ou nom d'un jeu extra (ex. dev2). "
+                             "Le jeu test exige --confirm-test.")
     parser.add_argument("--prompt", default="extraction_v0",
                         help="nom du fichier dans prompts/ (sans .txt)")
     parser.add_argument("--model", required=True,

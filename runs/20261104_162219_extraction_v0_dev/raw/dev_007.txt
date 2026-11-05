@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Ayari Import SA",
+  "invoice_date": "2025-08-10",
+  "net_amount": 11799.036,
+  "vat_amount": 825.933,
+  "total_amount": 12624.969
+}
+```

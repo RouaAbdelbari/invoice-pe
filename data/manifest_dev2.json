@@ -1,0 +1,16 @@
+{
+  "name": "dev2",
+  "main_seed": 42,
+  "extra_seed": 2026,
+  "n": 40,
+  "n_inconsistent": 6,
+  "n_anomalies": 3,
+  "balanced_layout_numstyle": true,
+  "suppliers": "identiques au jeu principal (graine 42)",
+  "counts": {
+    "dev2": 40,
+    "dev2_inconsistent": 6,
+    "dev2_anomalies": 3
+  },
+  "note": "Ce jeu ne modifie pas data/test/, data/dev/, data/history/ ni manifest.json."
+}

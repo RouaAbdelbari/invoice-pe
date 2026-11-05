@@ -1,0 +1,21 @@
+Ayari Import SA
+78, chemin de Lévy, Sousse
+Matricule fiscal : 3741438Q/A/M/000
+
+FACTURE N° X-2025-0012
+Date : 2025-08-17
+
+Client : Delannoy
+776, chemin Royer
+
+Désignation                          Qté      P.U.            Montant
+  Licence logicielle annuelle        7  x     1239.613  =      8677.291
+  Ordinateur portable                7  x      965.891  =      6761.237
+  Licence logicielle annuelle        3  x      916.132  =      2748.396
+  Maintenance serveur                7  x      945.204  =      6616.428
+
+Total HT (TND)      : 24803.352
+TVA 7 %             : 1736.235
+Total TTC (TND)     : 26539.587
+
+Conditions : paiement à 45 jours.

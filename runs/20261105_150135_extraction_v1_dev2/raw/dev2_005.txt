@@ -1,0 +1,1 @@
+{"supplier_name": "Khelifi Pro Group", "invoice_date": "2025-10-17", "net_amount": 3676.229, "vat_amount": 698.484, "total_amount": 4374.713}

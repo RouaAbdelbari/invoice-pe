@@ -1,0 +1,26 @@
+Pour répondre à cette question, nous devons nous concentrer sur la table `fact_invoice` qui contient les informations sur les factures, et la table `dim_vat` qui contient les informations sur les taux de TVA. Nous allons utiliser une jointure entre ces deux tables pour obtenir les résultats souhaités.
+
+Voici une requête SQL PostgreSQL qui répond à la question :
+
+```sql
+SELECT 
+    dim_vat.vat_rate AS taux_tva,
+    COUNT(fact_invoice.invoice_id) AS nombre_de_factures
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id
+GROUP BY 
+    dim_vat.vat_rate
+ORDER BY 
+    dim_vat.vat_rate;
+```
+
+### Explication de la requête :
+1. **SELECT** : Nous sélectionnons le taux de TVA (`vat_rate`) et le nombre de factures associées à chaque taux de TVA (`COUNT(fact_invoice.invoice_id)`).
+2. **FROM** : Nous commençons par la table `fact_invoice`.
+3. **JOIN** : Nous joignons la table `dim_vat` sur la condition que l'ID de TVA dans `fact_invoice` correspond à l'ID de TVA dans `dim_vat`.
+4. **GROUP BY** : Nous groupons les résultats par le taux de TVA pour obtenir le nombre de factures pour chaque taux.
+5. **ORDER BY** : Nous ordonnons les résultats par le taux de TVA pour une meilleure lisibilité.
+
+Cette requête vous donnera une liste des différents taux de TVA appliqués dans les factures, ainsi que le nombre de factures associées à chaque taux.

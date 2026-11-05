@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Zouari Tech SUARL",
+  "invoice_date": "25 août 2025",
+  "net_amount": 13780.840,
+  "vat_amount": 964.659,
+  "total_amount": 14745.499
+}
+```

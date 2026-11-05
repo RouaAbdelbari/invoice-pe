@@ -1,0 +1,22 @@
+Pour répondre à la question "Quels fournisseurs ont émis strictement plus d'une facture ?", vous pouvez utiliser la requête SQL suivante dans PostgreSQL. Cette requête utilise la table `fact_invoice` pour compter le nombre de factures par fournisseur et filtre les résultats pour inclure uniquement ceux qui ont émis plus d'une facture.
+
+```sql
+SELECT 
+    dim_supplier.supplier_id,
+    dim_supplier.supplier_name
+FROM 
+    fact_invoice
+JOIN 
+    dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id
+GROUP BY 
+    dim_supplier.supplier_id, dim_supplier.supplier_name
+HAVING 
+    COUNT(fact_invoice.invoice_id) > 1;
+```
+
+### Explication de la requête :
+1. **JOIN** : La requête joint la table `fact_invoice` avec la table `dim_supplier` sur la colonne `supplier_id` pour obtenir les informations sur les fournisseurs.
+2. **GROUP BY** : Les résultats sont regroupés par `supplier_id` et `supplier_name` pour calculer le nombre de factures par fournisseur.
+3. **HAVING** : La clause `HAVING` filtre les groupes pour inclure uniquement ceux qui ont un nombre de factures supérieur à 1.
+
+Cette requête retournera une liste des fournisseurs qui ont émis plus d'une facture.

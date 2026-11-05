@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: X-2025-0024
+Émise le / Issued on: October 11, 2025
+Vendeur / Seller: Haddad Pro SUARL, Nabeul
+Acheteur / Buyer: Hamel S.A.S.
+
+| Article                        | Qté |       Montant |
+| Cartouche d'encre              |   9 |    29 903,679 |
+| Classeurs (lot de 10)          |   4 |     8 747,264 |
+| Stylos (boîte de 50)           |   8 |    20 975,912 |
+
+| Base imposable / Net amount | 59 626,855 |
+| Montant TVA / VAT amount    | 4 173,880 |
+| TOTAL TTC                   | 63 800,735 |
+Devise : TND

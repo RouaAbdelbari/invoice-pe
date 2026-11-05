@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Gharbi Import SA, Sousse",
+  "invoice_date": "December 3, 2025",
+  "net_amount": 7017.807,
+  "vat_amount": 1333.383,
+  "total_amount": 8351.190
+}
+```

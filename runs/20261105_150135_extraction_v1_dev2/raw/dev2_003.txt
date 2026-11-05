@@ -1,0 +1,1 @@
+{"supplier_name": "Jaziri Solutions SUARL", "invoice_date": "2025-08-21", "net_amount": 26423.165, "vat_amount": 5020.401, "total_amount": 31443.566}

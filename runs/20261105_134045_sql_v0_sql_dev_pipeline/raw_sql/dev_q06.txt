@@ -1,0 +1,15 @@
+Pour répondre à la question "Quel est le montant HT moyen par facture (arrondi à 3 décimales) ?", vous pouvez utiliser la table `fact_invoice` qui contient les informations sur les factures. Voici une requête SQL PostgreSQL qui répond à cette question :
+
+```sql
+SELECT 
+    ROUND(AVG(fact_invoice.net_amount::numeric), 3) AS average_net_amount
+FROM 
+    fact_invoice;
+```
+
+### Explication :
+- `fact_invoice.net_amount` représente le montant HT (net amount) de chaque facture.
+- `AVG(fact_invoice.net_amount::numeric)` calcule la moyenne des montants HT.
+- `ROUND(..., 3)` arrondit le résultat à 3 décimales.
+
+Cette requête retournera le montant HT moyen par facture, arrondi à 3 décimales.

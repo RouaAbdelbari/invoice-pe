@@ -1,0 +1,29 @@
+{
+  "run": "20261105_113508_sql_v0_sql_dev_gold",
+  "prompt_sql": "sql_v0",
+  "prompt_answer": "answer_v0",
+  "model": "qwen2.5:7b",
+  "questions_set": "dev",
+  "target_schema": "gold",
+  "n_questions": 10,
+  "sql_strict_rate": 0.0,
+  "sql_lenient_rate": 1.0,
+  "n1_syntax_rate": 1.0,
+  "n2_guard_rate": 1.0,
+  "n3_semantic_rate": 0.1,
+  "n3_semantic_rate_of_executed": 0.2,
+  "numbers_ok_rate": 0.6,
+  "by_category": {
+    "agregat": "0/3",
+    "classement": "0/2",
+    "date/trimestre": "0/2",
+    "filtre": "1/2",
+    "groupement": "0/1"
+  },
+  "by_sensitive_to": {
+    "amount_x1000": "0/5",
+    "none": "0/1",
+    "rejection": "0/6",
+    "supplier_name": "1/4"
+  }
+}

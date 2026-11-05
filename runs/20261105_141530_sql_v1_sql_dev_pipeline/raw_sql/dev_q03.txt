@@ -1,0 +1,9 @@
+Pour répondre à la question "Quels sont les noms de fournisseurs distincts présents dans les factures ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT DISTINCT dim_supplier.supplier_name
+FROM fact_invoice
+JOIN dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id;
+```
+
+Cette requête joint la table `fact_invoice` avec la table `dim_supplier` en utilisant la clé étrangère `supplier_id`. Ensuite, elle sélectionne les noms de fournisseurs distincts en utilisant la fonction `DISTINCT`.

@@ -1,0 +1,4 @@
+Écris une requête SQL PostgreSQL qui répond à la question suivante.
+Schéma de la base :
+{schema}
+Question : {question}

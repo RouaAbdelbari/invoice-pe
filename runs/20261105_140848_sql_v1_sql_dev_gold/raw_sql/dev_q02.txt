@@ -1,0 +1,24 @@
+Pour calculer le montant TTC total de toutes les factures, vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT SUM(total_amount) AS total_ttc_amount
+FROM fact_invoice;
+```
+
+Cette requête somme le champ `total_amount` de la table `fact_invoice`, qui représente le montant TTC de chaque facture, et retourne la somme totale.
+
+Si vous voulez obtenir plus de détails, par exemple, le montant TTC par fournisseur, vous pouvez ajouter une jointure avec la table `dim_supplier` et inclure `supplier_name` dans le `SELECT` :
+
+```sql
+SELECT 
+    s.supplier_name,
+    SUM(fi.total_amount) AS total_ttc_amount
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_name;
+```
+
+Cette requête renvoie le nom du fournisseur et le montant TTC total pour chaque fournisseur.

@@ -1,0 +1,24 @@
+Pour répondre à la question "Quels fournisseurs ont émis strictement plus d'une facture ?", vous pouvez utiliser une requête SQL qui compte le nombre de factures par fournisseur et filtre les fournisseurs qui ont plus d'une facture. Voici la requête correspondante :
+
+```sql
+SELECT 
+    s.supplier_name,
+    COUNT(fi.invoice_key) AS number_of_invoices
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_name
+HAVING 
+    COUNT(fi.invoice_key) > 1;
+```
+
+Cette requête fait les opérations suivantes :
+
+1. **Jointure** : Elle joint la table `fact_invoice` avec la table `dim_supplier` sur la clé étrangère `supplier_id`.
+2. **Groupement** : Elle groupe les résultats par le nom du fournisseur (`s.supplier_name`).
+3. **Comptage** : Elle compte le nombre de factures pour chaque fournisseur.
+4. **Filtrage** : Elle filtre les groupes qui ont plus d'une facture en utilisant la clause `HAVING`.
+
+Le résultat de cette requête sera une liste des fournisseurs qui ont émis plus d'une facture, avec le nombre de factures émises pour chaque fournisseur.

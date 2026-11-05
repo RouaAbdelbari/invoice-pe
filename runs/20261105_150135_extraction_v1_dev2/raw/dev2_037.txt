@@ -1,0 +1,1 @@
+{"supplier_name": "Dridi Distribution Services", "invoice_date": "2025-12-20", "net_amount": 4065.503, "vat_amount": 284.585, "total_amount": 4350.088}

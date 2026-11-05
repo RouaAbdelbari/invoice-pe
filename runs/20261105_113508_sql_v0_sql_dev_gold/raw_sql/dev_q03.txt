@@ -1,0 +1,19 @@
+Pour répondre à la question "Quels sont les noms de fournisseurs distincts présents dans les factures ?", vous pouvez utiliser la requête SQL suivante dans PostgreSQL :
+
+```sql
+SELECT DISTINCT d.supplier_name
+FROM fact_invoice fi
+JOIN dim_supplier d ON fi.supplier_id = d.supplier_id;
+```
+
+Cette requête fait la supposition que la table `fact_invoice` contient un champ `supplier_id` qui est lié à la table `dim_supplier` par le champ `supplier_id`. Le champ `supplier_name` dans `dim_supplier` contient le nom du fournisseur.
+
+Si la structure des tables est différente, vous devrez ajuster les noms des champs et des tables en conséquence. Par exemple, si `dim_supplier` est nommé `supplier` et que le champ `supplier_name` est nommé `name`, la requête serait :
+
+```sql
+SELECT DISTINCT d.name
+FROM fact_invoice fi
+JOIN supplier d ON fi.supplier_id = d.supplier_id;
+```
+
+Assurez-vous de vérifier la structure réelle de vos tables pour ajuster la requête si nécessaire.

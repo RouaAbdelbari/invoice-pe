@@ -1,0 +1,22 @@
+Ferchichi Solutions SARL
+avenue Blin, Nabeul
+Matricule fiscal : 5918715X/A/M/000
+
+FACTURE N° X-2025-0023
+Date : 2025-08-05
+
+Client : Garcia
+4, rue Legendre
+
+Désignation                          Qté      P.U.            Montant
+  Ordinateur portable                3  x      631.789  =      1895.367
+  Disque SSD 1 To                    9  x      791.918  =      7127.262
+  Licence logicielle annuelle        9  x      752.719  =      6774.471
+  Licence logicielle annuelle        1  x      694.721  =       694.721
+  Ordinateur portable                4  x      582.327  =      2329.308
+
+Total HT (TND)      : 18821.129
+TVA 19 %             : 3576.015
+Total TTC (TND)     : 22397.144
+
+Conditions : paiement à 30 jours.

@@ -1,0 +1,1 @@
+{"supplier_name": "Zouari Tech SUARL", "invoice_date": "2025-07-17", "net_amount": 1371.790, "vat_amount": 96.025, "total_amount": 1467.815}

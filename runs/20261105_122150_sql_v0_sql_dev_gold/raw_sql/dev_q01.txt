@@ -1,0 +1,8 @@
+Pour répondre à la question "Combien de factures sont enregistrées au total ?", vous pouvez utiliser la table `fact_invoice` qui semble contenir les informations sur les factures. Voici une requête SQL PostgreSQL qui compte le nombre total de factures enregistrées :
+
+```sql
+SELECT COUNT(*) AS total_invoices
+FROM fact_invoice;
+```
+
+Cette requête compte le nombre total de lignes dans la table `fact_invoice`, ce qui correspond au nombre total de factures enregistrées. Le résultat sera un simple nombre entier qui représente le total de factures.

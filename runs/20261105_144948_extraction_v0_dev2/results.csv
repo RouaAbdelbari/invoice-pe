@@ -1,0 +1,41 @@
+invoice_id,latency_s,json_strict,json_lenient,schema_ok,required_ok,types_ok,arithmetic_ok,vat_rate_ok,is_valid,supplier_name,invoice_date,net_amount,vat_amount,total_amount,errors
+dev2_001,25.11,False,True,True,True,True,True,True,True,Ben Salah Distribution Services,2025-10-17,76797.863,5375.85,82173.713,
+dev2_002,11.91,False,True,True,True,True,True,True,True,Gharbi Import SA,2025-08-06,6752.778,1283.028,8035.806,
+dev2_003,14.33,False,True,True,True,True,True,True,True,Jaziri Solutions SUARL,2025-08-21,26423.165,5020.401,31443.566,
+dev2_004,11.83,False,True,True,True,True,True,True,True,Haddad Pro SUARL,2025-11-02,81610.587,5712.741,87323.328,
+dev2_005,11.89,False,True,True,True,True,True,True,True,Khelifi Pro Group,2025-10-17,3676.229,698.484,4374.713,
+dev2_006,12.05,False,True,True,True,True,True,True,True,Mansouri Trading SA,2025-07-31,5584.242,725.951,6310.193,
+dev2_007,14.06,False,True,True,True,True,False,True,False,"Jaziri Solutions SUARL (Bizerte, Tunisia) - Tax ID 2166941B/A/M/000",2025-12-19,20659.208,3925.25,24592.214,HT+TVA!=TTC
+dev2_008,14.2,False,True,True,True,True,False,True,False,"Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000",2025-07-14,35920.879,2514.462,38625.354,HT+TVA!=TTC
+dev2_009,10.89,False,True,True,True,True,True,True,True,"Dridi Distribution Services, Bizerte",2025-11-11,3923.456,274.642,4198.098,
+dev2_010,13.19,False,True,True,True,True,True,True,True,Hammami Tech SARL,2025-08-20,3573.508,678.967,4252.475,
+dev2_011,12.38,False,True,True,True,True,True,True,True,Haddad Pro SUARL,2025-12-21,16171.281,1131.99,17303.271,
+dev2_012,13.08,False,True,True,True,True,True,True,True,Ayari Import SA,2025-08-17,24803.352,1736.235,26539.587,
+dev2_013,13.54,False,True,True,True,True,True,True,True,"Mejri Trading & Fils (Sousse, Tunisia)",2025-11-01,53167.125,6911.726,60078.851,
+dev2_014,11.64,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-08-10,15852.494,3011.974,18864.468,
+dev2_015,15.05,False,True,True,True,True,False,True,False,"Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000",2025-09-07,5784.273,404.899,6375.876,HT+TVA!=TTC
+dev2_016,11.18,False,True,True,True,True,True,True,True,Zouari Tech SUARL,2025-07-17,1371.79,96.025,1467.815,
+dev2_017,16.28,False,True,True,True,True,False,True,False,"Ben Salah Distribution Services, Nabeul",2025-08-30,2969.35,207.86,3177.2,HT+TVA!=TTC
+dev2_018,12.38,False,True,True,True,True,True,True,True,"Gharbi Import SA, Sousse",2025-12-03,7017.807,1333.383,8351.19,
+dev2_019,10.28,False,True,True,True,True,True,True,True,Zouari Tech SUARL,2025-12-25,6365.591,445.591,6811.182,
+dev2_020,12.02,False,True,True,True,True,True,True,True,Haddad Pro SUARL,2025-07-29,22307.332,1561.513,23868.845,
+dev2_021,11.35,False,True,True,True,True,False,True,False,"Jaziri Solutions SUARL, Bizerte",2025-11-26,17192.273,3266.532,20347.934,HT+TVA!=TTC
+dev2_022,10.05,False,True,True,True,True,True,True,True,"Khelifi Pro Group, Sousse",2025-08-28,1561.725,296.728,1858.453,
+dev2_023,12.13,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-08-05,18821.129,3576.015,22397.144,
+dev2_024,11.18,False,True,True,True,True,True,True,True,"Haddad Pro SUARL, Nabeul",2025-10-11,59626.855,4173.88,63800.735,
+dev2_025,10.65,False,True,True,True,True,True,True,True,Mansouri Trading SA,2025-08-10,5220.48,678.662,5899.142,
+dev2_026,10.48,False,True,True,True,True,True,True,True,"Hammami Tech SARL, Nabeul",2025-11-14,2134.679,405.589,2540.268,
+dev2_027,12.53,False,True,True,True,True,True,True,True,Ben Salah Distribution Services,2025-08-06,880122.339,61608.564,941730.903,
+dev2_028,10.42,False,True,True,True,True,True,True,True,Dridi Distribution Services,2025-12-13,4670.391,326.927,4997.318,
+dev2_029,9.82,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2024-08-20,752.54,142.983,895.523,
+dev2_030,10.77,False,True,True,True,True,True,True,True,"Ayari Import SA, Sousse",2025-07-31,25948.304,1816.381,27764.685,
+dev2_031,10.58,False,True,True,True,True,True,True,True,Ben Salah Distribution Services,2025-07-23,58628.592,4104.001,62732.593,
+dev2_032,12.62,False,True,True,True,True,True,True,True,Gharbi Import SA,2025-08-26,66675.154,12668.279,79343.433,
+dev2_033,13.56,False,True,True,True,True,True,False,False,Ferchichi Solutions SARL,2025-09-07,13971.704,3423.954,17395.658,taux_TVA_inhabituel:0.245
+dev2_034,12.15,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-07-25,17943.135,3409.196,21352.331,
+dev2_035,11.93,False,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-11-26,16457.274,3126.882,19584.156,
+dev2_036,12.63,False,True,True,True,True,True,True,True,Mejri Trading & Fils,2025-12-25,25791.164,3352.851,29144.015,
+dev2_037,13.11,False,True,True,True,True,True,True,True,"Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000",2025-12-20,4065.503,284.585,4350.088,
+dev2_038,10.55,False,True,True,True,True,True,False,False,Hammami Tech SARL,2025-09-08,3594.389,996.497,4590.886,taux_TVA_inhabituel:0.277
+dev2_039,9.75,False,True,True,True,True,True,True,True,Ayari Import SA,2025-11-03,19273.776,1349.164,20622.94,
+dev2_040,11.36,False,True,True,True,True,True,True,True,Zouari Tech SUARL,2025-08-25,13780.84,964.659,14745.499,

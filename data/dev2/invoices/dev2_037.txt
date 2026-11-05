@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: X-2025-0037
+Issue date: 2025-12-20
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Chevalier
+
+Items
+- Intervention technicien | qty 5 | unit 175.285 | 876.425
+- Huile moteur | qty 9 | unit 354.342 | 3,189.078
+
+Subtotal: 4,065.503 TND
+VAT (7%): 284.585 TND
+Amount due: 4,350.088 TND
+
+Payment terms: net 15 days. Thank you for your business.

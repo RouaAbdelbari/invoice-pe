@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Gharbi Import SA",
+  "invoice_date": "2025-08-06",
+  "net_amount": 6752.778,
+  "vat_amount": 1283.028,
+  "total_amount": 8035.806
+}
+```

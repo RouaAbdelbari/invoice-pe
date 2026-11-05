@@ -1,0 +1,3 @@
+Écris une requête SQL PostgreSQL qui répond à la question suivante.
+Tables disponibles : {tables}
+Question : {question}

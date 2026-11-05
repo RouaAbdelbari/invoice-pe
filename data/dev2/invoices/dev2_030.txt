@@ -1,0 +1,14 @@
+Facture / Invoice      Réf: X-2025-0030
+Émise le / Issued on: 31 juillet 2025
+Vendeur / Seller: Ayari Import SA, Sousse
+Acheteur / Buyer: Dijoux Pierre S.A.R.L.
+
+| Article                        | Qté |       Montant |
+| Maintenance serveur            |   8 |      5961.008 |
+| Clavier et souris              |   4 |      6377.488 |
+| Disque SSD 1 To                |   8 |     13609.808 |
+
+| Base imposable / Net amount | 25948.304 |
+| Montant TVA / VAT amount    | 1816.381 |
+| TOTAL TTC                   | 27764.685 |
+Devise : TND

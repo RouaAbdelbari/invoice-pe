@@ -1,0 +1,21 @@
+{
+  "run": "20261105_122150_sql_v0_sql_dev_gold",
+  "stage": "text2sql",
+  "questions_set": "dev",
+  "target_schema": "gold",
+  "prompt_sql": "sql_v0",
+  "prompt_sql_sha256_12": "6c317339fcd3",
+  "prompt_sql_marker": "tables",
+  "prompt_answer": "answer_v0",
+  "prompt_answer_sha256_12": "27b608c556a7",
+  "model": "qwen2.5:7b",
+  "model_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 512
+  },
+  "n_questions": 10,
+  "pipeline_run": null,
+  "started_at": "2026-11-05T12:21:50"
+}

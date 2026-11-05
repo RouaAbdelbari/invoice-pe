@@ -1,0 +1,1 @@
+{"supplier_name": "Ayari Import SA", "invoice_date": "2025-10-23", "net_amount": 172830.356, "vat_amount": 12098.125, "total_amount": 184928.481}

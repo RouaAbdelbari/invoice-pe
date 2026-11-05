@@ -1,0 +1,21 @@
+invoice_id,latency_s,json_strict,json_lenient,schema_ok,required_ok,types_ok,arithmetic_ok,vat_rate_ok,is_valid,supplier_name,invoice_date,net_amount,vat_amount,total_amount,errors
+dev_001,27.31,True,True,True,True,True,True,True,True,Haddad Pro SUARL,2025-07-26,19262.09,1348.346,20610.436,
+dev_002,10.82,True,True,True,True,True,True,True,True,Hammami Tech SARL,2025-09-01,2988.529,567.821,3556.35,
+dev_003,10.07,True,True,True,True,True,True,True,True,Khelifi Pro Group,2025-10-18,11124.123,2113.583,13237.706,
+dev_004,9.79,True,True,True,True,True,True,True,True,Ferchichi Solutions SARL,2025-10-11,3060.481,581.491,3641.972,
+dev_005,13.26,True,True,True,True,True,True,True,True,Jaziri Solutions SUARL,2025-10-11,43353.608,8237.186,51590.794,
+dev_006,9.69,True,True,True,True,True,False,True,False,Mansouri Trading SA,2025-09-16,1126.566,146.454,1319.698,HT+TVA!=TTC
+dev_007,9.39,True,True,True,True,True,True,True,True,Ayari Import SA,2025-08-10,11799.036,825.933,12624.969,
+dev_008,11.41,True,True,True,True,True,True,True,True,Haddad Pro SUARL,2025-10-17,56346.088,3944.226,60290.314,
+dev_009,10.55,True,True,True,True,True,True,True,True,Zouari Tech SUARL,2025-09-11,8121.742,568.522,8690.264,
+dev_010,9.38,True,True,True,True,True,True,False,False,Hammami Tech SARL,2025-10-17,1786.417,493.924,2280.341,taux_TVA_inhabituel:0.276
+dev_011,9.68,True,True,True,True,True,True,True,True,Gharbi Import SA,2025-12-24,9664.598,1836.274,11500.872,
+dev_012,9.63,True,True,True,True,True,True,True,True,Gharbi Import SA,2025-10-30,1299.663,246.936,1546.599,
+dev_013,9.17,True,True,True,True,True,True,True,True,Dridi Distribution Services,2025-10-13,1929.174,135.042,2064.216,
+dev_014,9.65,True,True,True,True,True,True,True,True,Ben Salah Distribution Services,2025-10-04,24342.211,1703.955,26046.166,
+dev_015,8.62,True,True,True,True,True,False,True,False,Mansouri Trading SA,2025-08-16,2275.211,295.777,2467.559,HT+TVA!=TTC
+dev_016,9.5,True,True,True,True,True,True,True,True,Ayari Import SA,2025-10-23,172830.356,12098.125,184928.481,
+dev_017,10.77,True,True,True,True,True,True,True,True,Ayari Import SA,2025-10-22,107817.232,7547.206,115364.438,
+dev_018,10.51,True,True,True,True,True,True,True,True,Dridi Distribution Services,2025-11-16,13434.923,940.445,14375.368,
+dev_019,8.97,True,True,True,True,True,True,True,True,Dridi Distribution Services,2025-07-12,4309.664,301.676,4611.34,
+dev_020,9.04,True,True,True,True,True,True,True,True,Khelifi Pro Group,2025-09-04,2178.245,413.867,2592.112,

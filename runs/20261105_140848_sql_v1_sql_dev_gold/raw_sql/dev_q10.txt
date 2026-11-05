@@ -1,0 +1,24 @@
+Pour répondre à la question "Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT 
+    fi.invoice_number AS facture_number,
+    s.supplier_name AS fournisseur_name,
+    fi.total_amount AS montant_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+ORDER BY 
+    fi.total_amount DESC
+LIMIT 1;
+```
+
+Cette requête fait les jointures nécessaires entre les tables `fact_invoice`, `dim_supplier`, et `dim_date` (mais `dim_date` n'est pas nécessaire pour répondre à cette question). Elle sélectionne la facture avec le montant TTC le plus élevé et son fournisseur.
+
+Explications :
+- `fi.invoice_number AS facture_number` : Récupère le numéro de la facture.
+- `s.supplier_name AS fournisseur_name` : Récupère le nom du fournisseur.
+- `fi.total_amount AS montant_ttc` : Récupère le montant TTC de la facture.
+- `ORDER BY fi.total_amount DESC` : Trie les factures par montant TTC dans l'ordre décroissant.
+- `LIMIT 1` : Limite le résultat à la facture avec le montant TTC le plus élevé.

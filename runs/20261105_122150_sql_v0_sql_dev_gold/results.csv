@@ -1,0 +1,224 @@
+question_id,question,t_llm_sql,t_guard,t_db,t_llm_answer,sql_strict,sql_lenient,sql_raw_extracted,guard_accepted,guard_reason,sql_executed,execution_ok,execution_error,n_rows,answer_raw,numbers_cited,numbers_unverified,errors
+dev_q01,Combien de factures sont enregistrées au total ?,15.29,0.022,0.08,1.79,False,True,"SELECT COUNT(*) AS total_invoices
+FROM fact_invoice;",True,OK (LIMIT 1000 ajouté),"SELECT COUNT(*) AS total_invoices
+FROM fact_invoice
+LIMIT 1000",True,,1,"Au total, 17 factures sont enregistrées.",17,,
+dev_q02,Quel est le montant TTC total de toutes les factures ?,50.62,0.002,0.08,,False,True,"SELECT 
+    SUM(fact_invoice.net_amount * (1 + dim_vat.rate)) AS total_ttc
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    SUM(fact_invoice.net_amount * (1 + dim_vat.rate)) AS total_ttc
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id
+LIMIT 1000",False,"ERREUR:  la colonne dim_vat.rate n'existe pas
+LINE 2:     SUM(fact_invoice.net_amount * (1 + dim_vat.rate)) AS tot...
+                                               ^
+",0,,,,"exec:ERREUR:  la colonne dim_vat.rate n'existe pas
+LINE 2:     SU"
+dev_q03,Quels sont les noms de fournisseurs distincts présents dans les factures ?,28.49,0.001,0.07,13.54,False,True,"SELECT DISTINCT d.supplier_name
+FROM fact_invoice fi
+JOIN dim_supplier d ON fi.supplier_id = d.supplier_id;",True,OK (LIMIT 1000 ajouté),"SELECT DISTINCT d.supplier_name
+FROM fact_invoice fi
+JOIN dim_supplier d ON fi.supplier_id = d.supplier_id
+LIMIT 1000",True,,10,"Les noms de fournisseurs distincts présents dans les factures sont les suivants :
+
+1. Ayari Import SA
+2. Ben Salah Distribution Services
+3. Dridi Distribution Services
+4. Ferchichi Solutions SARL
+5. Gharbi Import SA
+6. Haddad Pro SUARL
+7. Hammami Tech SARL
+8. Jaziri Solutions SUARL
+9. Khelifi Pro Group
+10. Zouari Tech SUARL",1|2|3|4|5|6|7|8|9|10,1|2|3|4|5|6|7|8|9|10,"unverified:1,2,3"
+dev_q04,Quel fournisseur a le montant TTC total le plus élevé ?,39.4,0.002,0.17,,False,True,"SELECT 
+    s.supplier_id,
+    s.supplier_name,
+    SUM(f.ttc_amount) AS total_ttc_amount
+FROM 
+    fact_invoice f
+JOIN 
+    dim_supplier s ON f.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_id, s.supplier_name
+ORDER BY 
+    total_ttc_amount DESC
+LIMIT 1;",True,OK,"SELECT 
+    s.supplier_id,
+    s.supplier_name,
+    SUM(f.ttc_amount) AS total_ttc_amount
+FROM 
+    fact_invoice f
+JOIN 
+    dim_supplier s ON f.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_id, s.supplier_name
+ORDER BY 
+    total_ttc_amount DESC
+LIMIT 1;",False,"ERREUR:  la colonne f.ttc_amount n'existe pas
+LINE 4:     SUM(f.ttc_amount) AS total_ttc_amount
+                ^
+",0,,,,"exec:ERREUR:  la colonne f.ttc_amount n'existe pas
+LINE 4:     SU"
+dev_q05,Combien de factures ont été émises au cours du troisième trimestre 2025 (juillet–septembre) ?,39.25,0.002,0.06,,False,True,"SELECT COUNT(*)
+FROM fact_invoice fi
+JOIN dim_date dd ON fi.invoice_date = dd.date_key
+WHERE dd.year = 2025
+  AND dd.quarter = 3;",True,OK (LIMIT 1000 ajouté),"SELECT COUNT(*)
+FROM fact_invoice fi
+JOIN dim_date dd ON fi.invoice_date = dd.date_key
+WHERE dd.year = 2025
+  AND dd.quarter = 3
+LIMIT 1000",False,"ERREUR:  la colonne fi.invoice_date n'existe pas
+LINE 3: JOIN dim_date dd ON fi.invoice_date = dd.date_key
+                            ^
+",0,,,,"exec:ERREUR:  la colonne fi.invoice_date n'existe pas
+LINE 3: JOI"
+dev_q06,Quel est le montant HT moyen par facture (arrondi à 3 décimales) ?,21.59,0.002,0.07,4.47,False,True,"SELECT 
+    ROUND(AVG(fact_invoice.net_amount::numeric), 3) AS average_net_amount
+FROM 
+    fact_invoice;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    ROUND(AVG(fact_invoice.net_amount::numeric), 3) AS average_net_amount
+FROM 
+    fact_invoice
+LIMIT 1000",True,,1,"Le montant HT moyen par facture, arrondi à 3 décimales, est de 29050.692.",3|29050.692,3,unverified:3
+dev_q07,"Quels taux de TVA sont appliqués dans les factures, et combien de fois chacun est-il utilisé ?",44.68,0.001,0.06,6.29,False,True,"SELECT 
+    dim_vat.vat_rate AS taux_tva,
+    COUNT(fact_invoice.invoice_id) AS nombre_de_factures
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id
+GROUP BY 
+    dim_vat.vat_rate
+ORDER BY 
+    dim_vat.vat_rate;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    dim_vat.vat_rate AS taux_tva,
+    COUNT(fact_invoice.invoice_id) AS nombre_de_factures
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id
+GROUP BY 
+    dim_vat.vat_rate
+ORDER BY 
+    dim_vat.vat_rate
+LIMIT 1000",True,,2,"Dans les factures, le taux de TVA de 7% est appliqué dans 10 factures, tandis que le taux de TVA de 19% est appliqué dans 7 factures.",7|10|19|7,19,unverified:19
+dev_q08,Quel est le montant TTC total par mois (année et numéro de mois) ?,56.17,0.002,0.06,,False,True,"SELECT 
+    d.year AS annee,
+    d.month AS mois,
+    SUM(f.net_amount * (1 + v.rate / 100)) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.invoice_date_id = d.date_id
+JOIN 
+    dim_vat v ON f.vat_id = v.vat_id
+GROUP BY 
+    d.year, d.month
+ORDER BY 
+    d.year, d.month;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    d.year AS annee,
+    d.month AS mois,
+    SUM(f.net_amount * (1 + v.rate / 100)) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.invoice_date_id = d.date_id
+JOIN 
+    dim_vat v ON f.vat_id = v.vat_id
+GROUP BY 
+    d.year, d.month
+ORDER BY 
+    d.year, d.month
+LIMIT 1000",False,"ERREUR:  la colonne f.invoice_date_id n'existe pas
+LINE 8:     dim_date d ON f.invoice_date_id = d.date_id
+                          ^
+",0,,,,"exec:ERREUR:  la colonne f.invoice_date_id n'existe pas
+LINE 8:  "
+dev_q09,Quels fournisseurs ont émis strictement plus d'une facture ?,34.65,0.002,0.09,16.86,False,True,"SELECT 
+    dim_supplier.supplier_id,
+    dim_supplier.supplier_name
+FROM 
+    fact_invoice
+JOIN 
+    dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id
+GROUP BY 
+    dim_supplier.supplier_id, dim_supplier.supplier_name
+HAVING 
+    COUNT(fact_invoice.invoice_id) > 1;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    dim_supplier.supplier_id,
+    dim_supplier.supplier_name
+FROM 
+    fact_invoice
+JOIN 
+    dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id
+GROUP BY 
+    dim_supplier.supplier_id, dim_supplier.supplier_name
+HAVING 
+    COUNT(fact_invoice.invoice_id) > 1
+LIMIT 1000",True,,5,"Selon les résultats de la requête, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+1. Khelifi Pro Group (supplier_id : 142)
+2. Dridi Distribution Services (supplier_id : 150)
+3. Haddad Pro SUARL (supplier_id : 140)
+4. Ayari Import SA (supplier_id : 145)
+5. Gharbi Import SA (supplier_id : 148)
+
+Ces fournisseurs ont tous émis plus d'une facture basé sur les informations fournies.",1|142|2|150|3|140|4|145|5|148,1|2|3|4|5,"unverified:1,2,3"
+dev_q10,"Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?",60.43,0.005,0.06,,False,True,"SELECT 
+    fi.invoice_id AS facture_id,
+    fi.supplier_id AS fournisseur_id,
+    fi.net_amount,
+    fi.vat_rate,
+    fi.tot_amount,
+    s.supplier_name,
+    d.date
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_date d ON fi.invoice_date_id = d.date_id
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+JOIN 
+    dim_vat v ON fi.vat_rate = v.vat_rate
+WHERE 
+    fi.tot_amount = (
+        SELECT MAX(tot_amount) 
+        FROM fact_invoice
+    )
+ORDER BY 
+    fi.tot_amount DESC
+LIMIT 1;",True,OK,"SELECT 
+    fi.invoice_id AS facture_id,
+    fi.supplier_id AS fournisseur_id,
+    fi.net_amount,
+    fi.vat_rate,
+    fi.tot_amount,
+    s.supplier_name,
+    d.date
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_date d ON fi.invoice_date_id = d.date_id
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+JOIN 
+    dim_vat v ON fi.vat_rate = v.vat_rate
+WHERE 
+    fi.tot_amount = (
+        SELECT MAX(tot_amount) 
+        FROM fact_invoice
+    )
+ORDER BY 
+    fi.tot_amount DESC
+LIMIT 1;",False,"ERREUR:  la colonne fi.invoice_date_id n'existe pas
+LINE 12:     dim_date d ON fi.invoice_date_id = d.date_id
+                           ^
+",0,,,,"exec:ERREUR:  la colonne fi.invoice_date_id n'existe pas
+LINE 12:"

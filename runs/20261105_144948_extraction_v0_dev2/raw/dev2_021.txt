@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Jaziri Solutions SUARL, Bizerte",
+  "invoice_date": "2025-11-26",
+  "net_amount": 17192.273,
+  "vat_amount": 3266.532,
+  "total_amount": 20347.934
+}
+```

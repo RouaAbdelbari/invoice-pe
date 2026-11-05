@@ -1,0 +1,17 @@
+Les noms de fournisseurs distincts présents dans les factures sont les suivants :
+
+1. Haddad Pro SUARL, Nabeul
+2. Gharbi Import SA, Sousse
+3. Ferchichi Solutions SARL
+4. Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000
+5. Hammami Tech SARL
+6. Zouari Tech SUARL
+7. Ayari Import SA
+8. Khelifi Pro Group
+9. Khelifi Pro Group, Sousse
+10. Gharbi Import SA
+11. Dridi Distribution Services
+12. Jaziri Solutions SUARL
+13. Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+
+Notez que certains noms de fournisseurs apparaissent plusieurs fois, mais ils sont inclus dans la liste des fournisseurs distincts car ils sont identiques.

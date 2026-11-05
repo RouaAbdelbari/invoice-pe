@@ -1,0 +1,106 @@
+{
+  "description": "10 questions de développement — servent à concevoir et ajuster les prompts SQL. Ne jamais utiliser pour évaluation finale.",
+  "schema_note": "Remplacer {schema} par 'gold' ou 'pipeline' selon la cible.",
+  "questions": [
+    {
+      "id": "dev_q01",
+      "question": "Combien de factures sont enregistrées au total ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["rejection"],
+      "notes": "Pas d'ex æquo possible. gold=17 (3 incohérentes exclues), pipeline varie selon les rejets LLM."
+    },
+    {
+      "id": "dev_q02",
+      "question": "Quel est le montant TTC total de toutes les factures ?",
+      "reference_sql": "SELECT ROUND(SUM(total_amount), 3) AS total_ttc FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "ROUND à 3 décimales. Une facture ×1000 gonfle massivement la somme. Les 3 rejetées manquent dans pipeline."
+    },
+    {
+      "id": "dev_q03",
+      "question": "Quels sont les noms de fournisseurs distincts présents dans les factures ?",
+      "reference_sql": "SELECT supplier_name FROM {schema}.dim_supplier ORDER BY supplier_name;",
+      "category": "filtre",
+      "expected_answer_type": "liste",
+      "measure": "none",
+      "sensitive_to": ["supplier_name"],
+      "notes": "Aucun ex æquo. Pipeline peut contenir des variantes (ex. 'Haddad Pro SUARL, Nabeul') qui n'existent pas dans gold."
+    },
+    {
+      "id": "dev_q04",
+      "question": "Quel fournisseur a le montant TTC total le plus élevé ?",
+      "reference_sql": "SELECT ds.supplier_name, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name ORDER BY total_ttc DESC LIMIT 1;",
+      "category": "classement",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "LIMIT 1 — ex æquo possibles en cas de montant identique, non attendu sur ces données. Une erreur ×1000 peut changer le classement. Un nom fragmenté en pipeline (supplier_extra_text) dilue les totaux."
+    },
+    {
+      "id": "dev_q05",
+      "question": "Combien de factures ont été émises au cours du troisième trimestre 2025 (juillet–septembre) ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 AND dd.quarter = 3;",
+      "category": "date/trimestre",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["rejection"],
+      "notes": "Période explicite : Q3 2025 = juillet, août, septembre. Pas d'ex æquo. Les fiches rejetées (dates non extraites) manquent dans pipeline."
+    },
+    {
+      "id": "dev_q06",
+      "question": "Quel est le montant HT moyen par facture (arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT ROUND(AVG(net_amount), 3) AS moyenne_ht FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "HT",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "ROUND à 3 décimales. Une erreur ×1000 sur une facture tire fortement la moyenne. Les 3 rejetées changent le dénominateur."
+    },
+    {
+      "id": "dev_q07",
+      "question": "Quels taux de TVA sont appliqués dans les factures, et combien de fois chacun est-il utilisé ?",
+      "reference_sql": "SELECT dv.vat_rate, COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_vat dv USING (vat_id) GROUP BY dv.vat_rate ORDER BY dv.vat_rate;",
+      "category": "groupement",
+      "expected_answer_type": "table",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin : le taux de TVA est recalculé côté Python depuis HT et TVA extraits, puis stocké dans dim_vat. Pas d'ex æquo dans les comptes."
+    },
+    {
+      "id": "dev_q08",
+      "question": "Quel est le montant TTC total par mois (année et numéro de mois) ?",
+      "reference_sql": "SELECT dd.year, dd.month, dd.month_name, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) GROUP BY dd.year, dd.month, dd.month_name ORDER BY dd.year, dd.month;",
+      "category": "date/trimestre",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "ROUND à 3 décimales. Ex æquo sur total_ttc possibles mais non attendus sur ces données. Une erreur ×1000 déforme un mois entier."
+    },
+    {
+      "id": "dev_q09",
+      "question": "Quels fournisseurs ont émis strictement plus d'une facture ?",
+      "reference_sql": "SELECT ds.supplier_name, COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name HAVING COUNT(*) > 1 ORDER BY n_factures DESC, ds.supplier_name ASC;",
+      "category": "filtre",
+      "expected_answer_type": "table",
+      "measure": "count",
+      "sensitive_to": ["supplier_name", "rejection"],
+      "notes": "Ex æquo sur n_factures triés secondairement par nom. Un fournisseur fragmenté (pipeline) peut tomber sous le seuil."
+    },
+    {
+      "id": "dev_q10",
+      "question": "Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?",
+      "reference_sql": "SELECT fi.invoice_id, fi.invoice_number, ds.supplier_name, fi.total_amount FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) ORDER BY fi.total_amount DESC LIMIT 1;",
+      "category": "classement",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "LIMIT 1. En cas d'ex æquo sur total_amount, la facture retournée dépend de l'ordre interne — non attendu ici. Une erreur ×1000 changerait le résultat."
+    }
+  ]
+}

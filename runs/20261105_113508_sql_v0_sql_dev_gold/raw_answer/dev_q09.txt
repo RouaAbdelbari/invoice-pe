@@ -1,0 +1,9 @@
+Selon les résultats de la requête, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+1. Khelifi Pro Group (supplier_id : 142)
+2. Dridi Distribution Services (supplier_id : 150)
+3. Haddad Pro SUARL (supplier_id : 140)
+4. Ayari Import SA (supplier_id : 145)
+5. Gharbi Import SA (supplier_id : 148)
+
+Ces fournisseurs ont tous émis plus d'une facture basé sur les informations fournies.

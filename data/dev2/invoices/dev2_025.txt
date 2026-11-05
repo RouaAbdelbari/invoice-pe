@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: X-2025-0025
+Issue date: 2025-08-10
+
+From: Mansouri Trading SA (Tunis, Tunisia) - Tax ID 2556017N/A/M/000
+Bill to: Laroche
+
+Items
+- Formation (journée) | qty 8 | unit 209.070 | 1,672.560
+- Audit qualité | qty 9 | unit 180.352 | 1,623.168
+- Prestation de conseil | qty 3 | unit 87.631 | 262.893
+- Audit qualité | qty 9 | unit 184.651 | 1,661.859
+
+Subtotal: 5,220.480 TND
+VAT (13%): 678.662 TND
+Amount due: 5,899.142 TND
+
+Payment terms: net 15 days. Thank you for your business.

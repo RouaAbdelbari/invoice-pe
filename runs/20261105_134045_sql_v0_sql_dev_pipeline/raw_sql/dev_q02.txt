@@ -1,0 +1,29 @@
+Pour calculer le montant TTC total de toutes les factures, vous pouvez utiliser la table `fact_invoice` qui semble contenir les informations sur les factures. Vous devrez également prendre en compte la table `dim_vat` qui contient les informations sur la TVA (ou VAT en anglais).
+
+Voici une requête SQL PostgreSQL qui répond à cette question :
+
+```sql
+SELECT 
+    SUM(fact_invoice.net_amount * (1 + dim_vat.rate)) AS total_ttc
+FROM 
+    fact_invoice
+JOIN 
+    dim_vat ON fact_invoice.vat_id = dim_vat.vat_id;
+```
+
+### Explication :
+- **`fact_invoice.net_amount`** : Cette colonne contient le montant HT (TTC sans TVA) de chaque facture.
+- **`dim_vat.rate`** : Cette colonne contient le taux de TVA associé à chaque facture.
+- **`SUM(fact_invoice.net_amount * (1 + dim_vat.rate))`** : Cette expression calcule le montant TTC pour chaque facture en ajoutant le taux de TVA au montant HT et en multipliant par le net amount.
+- **`JOIN dim_vat ON fact_invoice.vat_id = dim_vat.vat_id`** : Cette jointure permet de lier la table `fact_invoice` à la table `dim_vat` pour obtenir le taux de TVA associé à chaque facture.
+
+Si la table `fact_invoice` ne contient pas de colonne `net_amount` et que vous avez une colonne `gross_amount` qui contient le montant TTC, vous pouvez ajuster la requête comme suit :
+
+```sql
+SELECT 
+    SUM(fact_invoice.gross_amount) AS total_ttc
+FROM 
+    fact_invoice;
+```
+
+Cette version est plus simple et directe si le montant TTC est déjà stocké dans la table `fact_invoice`.

@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: X-2025-0010
+Issue date: 2025-08-20
+
+From: Hammami Tech SARL (Nabeul, Tunisia) - Tax ID 1445199T/A/M/000
+Bill to: Bruneau S.A.
+
+Items
+- Ordinateur portable | qty 9 | unit 214.644 | 1,931.796
+- Ordinateur portable | qty 8 | unit 205.214 | 1,641.712
+
+Subtotal: 3,573.508 TND
+VAT (19%): 678.967 TND
+Amount due: 4,252.475 TND
+
+Payment terms: net 60 days. Thank you for your business.

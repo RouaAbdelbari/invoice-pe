@@ -1,0 +1,17 @@
+INVOICE
+Invoice no.: X-2025-0008
+Issue date: 2025-07-14
+
+From: Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000
+Bill to: De Oliveira
+
+Items
+- Enveloppes (lot de 100) | qty 6 | unit 3586.359 | 21518.154
+- Ramette papier A4 | qty 1 | unit 2525.970 | 2525.970
+- Classeurs (lot de 10) | qty 5 | unit 2375.351 | 11876.755
+
+Subtotal: 35920.879 TND
+VAT (7%): 2514.462 TND
+Amount due: 38625.354 TND
+
+Payment terms: net 30 days. Thank you for your business.

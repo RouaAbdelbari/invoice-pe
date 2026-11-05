@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Ben Salah Distribution Services (Nabeul, Tunisia) - Tax ID 8038374H/A/M/000",
+  "invoice_date": "2025-10-04",
+  "net_amount": 24342.211,
+  "vat_amount": 1703.955,
+  "total_amount": 26046.166
+}
+```

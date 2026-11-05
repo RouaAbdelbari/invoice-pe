@@ -1,0 +1,6 @@
+Selon les résultats de la requête, deux fournisseurs ont émis strictement plus d'une facture :
+
+1. Dridi Distribution Services (supplier_id : 62)
+2. Ayari Import SA (supplier_id : 57)
+
+Ces deux fournisseurs semblent avoir une activité de facturation régulière ou importante.

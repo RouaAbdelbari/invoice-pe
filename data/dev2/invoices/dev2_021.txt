@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: X-2025-0021
+Émise le / Issued on: November 26, 2025
+Vendeur / Seller: Jaziri Solutions SUARL, Bizerte
+Acheteur / Buyer: Pereira
+
+| Article                        | Qté |       Montant |
+| Classeurs (lot de 10)          |   7 |     7,426.489 |
+| Cartouche d'encre              |   7 |     9,765.784 |
+
+| Base imposable / Net amount | 17,192.273 |
+| Montant TVA / VAT amount    | 3,266.532 |
+| TOTAL TTC                   | 20,347.934 |
+Devise : TND

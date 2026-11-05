@@ -1,0 +1,46 @@
+Pour répondre à cette question, nous devons joindre plusieurs tables pour obtenir les informations nécessaires. Voici une requête SQL PostgreSQL qui répond à la question : "Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?"
+
+```sql
+SELECT 
+    fi.invoice_id AS facture_id,
+    fi.supplier_id AS fournisseur_id,
+    fi.net_amount,
+    fi.vat_rate,
+    fi.tot_amount,
+    s.supplier_name,
+    d.date
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_date d ON fi.invoice_date_id = d.date_id
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+JOIN 
+    dim_vat v ON fi.vat_rate = v.vat_rate
+WHERE 
+    fi.tot_amount = (
+        SELECT MAX(tot_amount) 
+        FROM fact_invoice
+    )
+ORDER BY 
+    fi.tot_amount DESC
+LIMIT 1;
+```
+
+### Explication de la requête :
+1. **Tables Joins**:
+   - `fact_invoice (fi)`: Table principale contenant les informations sur les factures.
+   - `dim_date (d)`: Table contenant les dates.
+   - `dim_supplier (s)`: Table contenant les informations sur les fournisseurs.
+   - `dim_vat (v)`: Table contenant les informations sur les taux de TVA.
+
+2. **Joins**:
+   - `JOIN dim_date d ON fi.invoice_date_id = d.date_id`: Joindre la table `dim_date` pour obtenir la date de la facture.
+   - `JOIN dim_supplier s ON fi.supplier_id = s.supplier_id`: Joindre la table `dim_supplier` pour obtenir le nom du fournisseur.
+   - `JOIN dim_vat v ON fi.vat_rate = v.vat_rate`: Joindre la table `dim_vat` pour obtenir le taux de TVA.
+
+3. **Filtrage**:
+   - `WHERE fi.tot_amount = (SELECT MAX(tot_amount) FROM fact_invoice)`: Filtrer pour obtenir la facture avec le montant TTC le plus élevé.
+
+4. **Résultat**:
+   - `SELECT fi.invoice_id, fi.supplier_id, fi.net_amount, fi.vat_rate, fi.tot_amount, s.supplier_name, d.date`: Sélectionner les

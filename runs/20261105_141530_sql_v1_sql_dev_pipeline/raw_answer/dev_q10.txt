@@ -1,0 +1,1 @@
+La facture ayant le montant TTC le plus élevé est la facture_number dev_019, et son fournisseur est Dridi Distribution Services. Le montant TTC de cette facture est de 4 611 340,00 euros.

@@ -1,0 +1,16 @@
+question_id,question,category,sensitive_to,sql_strict,sql_lenient,n1_syntax_valid,n2_guard_accepted,guard_reason,n3_sql_strict,n3_sql_loose,n3_truth_strict,n3_truth_loose,execution_ok,has_answer,n_rows_candidate,n_rows_reference,numbers_faithful,numbers_true,nums_faithful_unverified,nums_true_unverified,errors
+dev_q01,Combien de factures sont enregistrées au total ?,agregat,rejection,False,True,True,True,OK (LIMIT 1000 ajouté),False,True,False,True,True,True,1,1,True,True,,,
+dev_q02,Quel est le montant TTC total de toutes les factures ?,agregat,amount_x1000|rejection,False,True,True,True,OK (LIMIT 1000 ajouté),,,,,False,False,0,0,,,,,"exec:ERREUR:  la colonne dim_vat.rate n'existe pas
+LINE 2:     SU"
+dev_q03,Quels sont les noms de fournisseurs distincts présents dans les factures ?,filtre,supplier_name,False,True,True,True,OK (LIMIT 1000 ajouté),False,True,False,False,True,True,14,14,False,False,000,000,"unverified:1,2,3"
+dev_q04,Quel fournisseur a le montant TTC total le plus élevé ?,classement,amount_x1000|supplier_name,False,True,True,True,OK,,,,,False,False,0,0,,,,,"exec:ERREUR:  la colonne f.ttc_amount n'existe pas
+LINE 4:     SU"
+dev_q05,Combien de factures ont été émises au cours du troisième trimestre 2025 (juillet–septembre) ?,date/trimestre,rejection,False,True,True,True,OK (LIMIT 1000 ajouté),,,,,False,False,0,0,,,,,"exec:ERREUR:  la colonne fi.invoice_date n'existe pas
+LINE 3: JOI"
+dev_q06,Quel est le montant HT moyen par facture (arrondi à 3 décimales) ?,agregat,amount_x1000|rejection,False,True,True,True,OK (LIMIT 1000 ajouté),False,True,False,False,True,True,1,1,True,False,,457926.857,unverified:3
+dev_q07,"Quels taux de TVA sont appliqués dans les factures, et combien de fois chacun est-il utilisé ?",groupement,none,False,True,True,True,OK (LIMIT 1000 ajouté),False,True,False,True,True,True,2,2,False,False,19,19,unverified:19
+dev_q08,Quel est le montant TTC total par mois (année et numéro de mois) ?,date/trimestre,amount_x1000|rejection,False,True,True,True,OK (LIMIT 1000 ajouté),,,,,False,False,0,0,,,,,"exec:ERREUR:  la colonne f.invoice_date_id n'existe pas
+LINE 8:  "
+dev_q09,Quels fournisseurs ont émis strictement plus d'une facture ?,filtre,supplier_name|rejection,False,True,True,True,OK (LIMIT 1000 ajouté),False,False,False,False,True,True,2,2,True,False,,62|57,"unverified:1,2"
+dev_q10,"Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?",classement,amount_x1000|supplier_name,False,True,True,True,OK,,,,,False,False,0,0,,,,,"exec:ERREUR:  la colonne fi.invoice_date_id n'existe pas
+LINE 12:"

@@ -1,0 +1,27 @@
+Pour répondre à la question "Quels taux de TVA sont appliqués dans les factures, et combien de fois chacun est-il utilisé ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT 
+    dv.vat_rate,
+    COUNT(fi.invoice_key) AS nombre_de_factures
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_vat dv ON fi.vat_id = dv.vat_id
+GROUP BY 
+    dv.vat_rate
+ORDER BY 
+    dv.vat_rate;
+```
+
+Cette requête fait les jointures nécessaires entre les tables `fact_invoice`, `dim_vat`, et utilise la fonction `COUNT` pour compter le nombre de factures associées à chaque taux de TVA. Le résultat est groupé par `vat_rate` et trié par ordre croissant du taux de TVA.
+
+Voici une explication détaillée de la requête :
+
+- `SELECT dv.vat_rate, COUNT(fi.invoice_key) AS nombre_de_factures`: Cette partie sélectionne le taux de TVA et le nombre de factures associées à chaque taux.
+- `FROM fact_invoice fi`: Cette partie spécifie la table principale `fact_invoice` et lui donne un alias `fi`.
+- `JOIN dim_vat dv ON fi.vat_id = dv.vat_id`: Cette jointure relie `fact_invoice` à `dim_vat` en utilisant la clé étrangère `vat_id`.
+- `GROUP BY dv.vat_rate`: Cette clause de groupe permet de regrouper les résultats par taux de TVA.
+- `ORDER BY dv.vat_rate`: Cette clause trie les résultats par ordre croissant du taux de TVA.
+
+Cette requête vous donnera une liste des taux de TVA utilisés dans les factures, ainsi que le nombre de factures associées à chaque taux.

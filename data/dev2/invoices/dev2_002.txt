@@ -1,0 +1,21 @@
+Gharbi Import SA
+969, avenue de Hamel, Sousse
+Matricule fiscal : 2694522N/A/M/000
+
+FACTURE N° X-2025-0002
+Date : August 6, 2025
+
+Client : Hubert S.A.S.
+13, rue de Masson
+
+Désignation                          Qté      P.U.            Montant
+  Location de camion                 2  x      338,001  =       676,002
+  Stockage mensuel                   8  x      364,357  =     2 914,856
+  Emballage carton                   5  x      317,939  =     1 589,695
+  Livraison express                  5  x      314,445  =     1 572,225
+
+Total HT (TND)      : 6 752,778
+TVA 19 %             : 1 283,028
+Total TTC (TND)     : 8 035,806
+
+Conditions : paiement à 60 jours.

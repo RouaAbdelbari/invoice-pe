@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: X-2025-0022
+Émise le / Issued on: August 28, 2025
+Vendeur / Seller: Khelifi Pro Group, Sousse
+Acheteur / Buyer: Letellier Bouchet S.A.
+
+| Article                        | Qté |       Montant |
+| Transport de marchandises      |   5 |     1,561.725 |
+
+| Base imposable / Net amount | 1,561.725 |
+| Montant TVA / VAT amount    | 296.728 |
+| TOTAL TTC                   | 1,858.453 |
+Devise : TND

@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Jaziri Solutions SUARL (Bizerte, Tunisia) - Tax ID 2166941B/A/M/000",
+  "invoice_date": "19/12/2025",
+  "net_amount": 20659.208,
+  "vat_amount": 3925.25,
+  "total_amount": 24592.214
+}
+```

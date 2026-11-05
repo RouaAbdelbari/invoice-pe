@@ -1,0 +1,1 @@
+{"supplier_name": "Ferchichi Solutions SARL", "invoice_date": "2025-08-05", "net_amount": 18821.129, "vat_amount": 3576.015, "total_amount": 22397.144}

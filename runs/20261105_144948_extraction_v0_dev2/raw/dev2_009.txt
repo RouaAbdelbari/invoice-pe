@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Dridi Distribution Services, Bizerte",
+  "invoice_date": "11/11/2025",
+  "net_amount": 3923.456,
+  "vat_amount": 274.642,
+  "total_amount": 4198.098
+}
+```

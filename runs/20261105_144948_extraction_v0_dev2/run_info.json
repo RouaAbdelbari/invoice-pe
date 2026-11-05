@@ -1,0 +1,20 @@
+{
+  "run": "20261105_144948_extraction_v0_dev2",
+  "stage": "extraction",
+  "dataset": "dev2",
+  "n_invoices": 40,
+  "prompt": "extraction_v0",
+  "prompt_sha256_12": "6b3fd7820075",
+  "model": "qwen2.5:7b",
+  "model_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 512
+  },
+  "started_at": "2026-11-05T14:49:48",
+  "ground_truth_sha256": "d4e50f05ddf00ddee1b21acd947145edb560c3b61c60d9d4de701d03b551f34a",
+  "fewshot_file": null,
+  "fewshot_ids_used": null,
+  "repeat_suffix": null
+}

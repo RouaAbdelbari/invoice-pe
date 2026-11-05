@@ -288,6 +288,22 @@ NUM_STYLES = ["fr", "en", "plain"]
 LANG_OF_LAYOUT = {"classic_fr": "fr", "modern_en": "en", "compact": "fr", "table_mixed": "fr/en"}
 
 
+def balanced_layout_numstyle(n: int, rng: random.Random) -> list[tuple[str, str]]:
+    """Génère n paires (layout, num_style) avec couverture équilibrée des 12 combinaisons.
+
+    Les 12 combinaisons = 4 layouts × 3 num_styles. Pour n=40 : chaque combinaison
+    apparaît 3 fois, avec 4 paires supplémentaires tirées aléatoirement parmi les 12.
+    Pour n=20 (dev) : chaque combinaison apparaît 1 fois, avec 8 supplémentaires.
+    L'ordre est mélangé avec la graine fournie pour la reproductibilité.
+    """
+    combos = [(l, ns) for l in LAYOUTS for ns in NUM_STYLES]   # 12 combinaisons
+    full_repeats = n // len(combos)                              # répétitions complètes
+    remainder = n % len(combos)
+    pool = combos * full_repeats + rng.sample(combos, remainder)
+    rng.shuffle(pool)
+    return pool
+
+
 # ---------------------------------------------------------------------------
 # 6. ÉCRITURE DES FICHIERS
 # ---------------------------------------------------------------------------
@@ -298,12 +314,19 @@ GT_FIELDS = ["invoice_id", "file", "invoice_number", "supplier_name", "invoice_d
              "is_inconsistent", "inconsistency_type", "anomaly_type"]
 
 
-def write_text_set(name, n, n_inconsistent, n_anomalies, prefix, rng, fake, suppliers, out, history_ref):
+def write_text_set(name, n, n_inconsistent, n_anomalies, prefix, rng, fake, suppliers, out, history_ref,
+                   balanced: bool = False):
     folder = out / name
     (folder / "invoices").mkdir(parents=True, exist_ok=True)
 
     special = rng.sample(range(n), n_inconsistent + n_anomalies)
     incons_idx, anom_idx = set(special[:n_inconsistent]), set(special[n_inconsistent:])
+
+    # Couverture layout × num_style : équilibrée si demandé, sinon comportement d'origine
+    if balanced:
+        layout_ns_pairs = balanced_layout_numstyle(n, rng)
+    else:
+        layout_ns_pairs = None   # calculé en boucle comme avant
 
     rows, made = [], []
     for i in range(n):
@@ -315,7 +338,12 @@ def write_text_set(name, n, n_inconsistent, n_anomalies, prefix, rng, fake, supp
             inject_inconsistency(rng, inv)
         made.append(inv)
 
-        layout, ds, ns = LAYOUTS[i % 4], rng.choice(DATE_STYLES), NUM_STYLES[(i // 4) % 3]
+        if balanced:
+            layout, ns = layout_ns_pairs[i]
+        else:
+            layout, ns = LAYOUTS[i % 4], NUM_STYLES[(i // 4) % 3]
+        ds = rng.choice(DATE_STYLES)
+
         inv_id = f"{name}_{i + 1:03d}"
         fname = f"{inv_id}.txt"
         (folder / "invoices" / fname).write_text(render(inv, layout, ds, ns, fake, rng), encoding="utf-8")
@@ -373,19 +401,104 @@ def main():
     parser = argparse.ArgumentParser(description="Générateur de factures synthétiques")
     parser.add_argument("--seed", type=int, default=42, help="graine aléatoire (reproductibilité)")
     parser.add_argument("--out", type=str, default="data", help="dossier de sortie")
+    # --- Options jeu extra-dev (ne touche pas test/dev/history/manifest.json) ---
+    parser.add_argument("--extra-dev", type=int, default=None, metavar="N",
+                        help="génère uniquement data/<extra-name>/ avec N factures (graine distincte)")
+    parser.add_argument("--extra-seed", type=int, default=None, metavar="S",
+                        help="graine pour le jeu extra-dev (obligatoire avec --extra-dev)")
+    parser.add_argument("--extra-name", type=str, default="dev2", metavar="NAME",
+                        help="nom du sous-dossier créé dans data/ (défaut : dev2)")
     args = parser.parse_args()
 
+    out = Path(args.out)
+
+    # -----------------------------------------------------------------------
+    # Mode extra-dev : génère uniquement data/<extra-name>/
+    # -----------------------------------------------------------------------
+    if args.extra_dev is not None:
+        if args.extra_seed is None:
+            raise SystemExit("--extra-seed est obligatoire avec --extra-dev")
+        n = args.extra_dev
+        name = args.extra_name
+
+        # Fournisseurs identiques au jeu principal (graine 42 fixe)
+        rng_main = random.Random(42)
+        fake_main = Faker("fr_FR")
+        Faker.seed(42)
+        suppliers = build_suppliers(rng_main, fake_main)
+
+        # Historique de référence : reconstruit avec la graine 42 pour inject_anomaly
+        rng_hist = random.Random(42)
+        fake_hist = Faker("fr_FR")
+        Faker.seed(42)
+        suppliers_hist = build_suppliers(rng_hist, fake_hist)
+        history_ref = []
+        for i in range(N_HISTORY):
+            sup = rng_hist.choice(suppliers_hist)
+            inv = make_invoice(rng_hist, sup,
+                               random_date(rng_hist, HISTORY_START, HISTORY_END),
+                               f"H-{i + 1:05d}")
+            if rng_hist.random() < HISTORY_ANOMALY_RATE:
+                inject_anomaly(rng_hist, inv, history_ref)
+            history_ref.append(inv)
+
+        # Graine distincte pour les factures extra-dev
+        rng_extra = random.Random(args.extra_seed)
+        fake_extra = Faker("fr_FR")
+        Faker.seed(args.extra_seed)
+
+        # Paramètres : 6 incohérentes, 3 anomalies, couverture équilibrée
+        n_incons = 6
+        n_anom = 3
+        if n_incons + n_anom > n:
+            raise SystemExit(f"--extra-dev N trop petit : {n} < {n_incons + n_anom} (6 incohérentes + 3 anomalies)")
+
+        rows = write_text_set(
+            name=name, n=n, n_inconsistent=n_incons, n_anomalies=n_anom,
+            prefix="X", rng=rng_extra, fake=fake_extra,
+            suppliers=suppliers, out=out,
+            history_ref=history_ref,
+            balanced=True,
+        )
+
+        manifest_extra = {
+            "name": name,
+            "main_seed": 42,
+            "extra_seed": args.extra_seed,
+            "n": n,
+            "n_inconsistent": n_incons,
+            "n_anomalies": n_anom,
+            "balanced_layout_numstyle": True,
+            "suppliers": "identiques au jeu principal (graine 42)",
+            "counts": {
+                name: len(rows),
+                f"{name}_inconsistent": sum(r["is_inconsistent"] for r in rows),
+                f"{name}_anomalies": sum(bool(r["anomaly_type"]) for r in rows),
+            },
+            "note": "Ce jeu ne modifie pas data/test/, data/dev/, data/history/ ni manifest.json.",
+        }
+        manifest_path = out / f"manifest_{name}.json"
+        manifest_path.write_text(json.dumps(manifest_extra, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        c = manifest_extra["counts"]
+        print(f"Jeu extra '{name}' généré dans '{out}/{name}/' (extra-seed {args.extra_seed})")
+        print(f"  {name} : {c[name]} factures ({c[name+'_inconsistent']} incohérentes, "
+              f"{c[name+'_anomalies']} anomalies)")
+        print(f"  Manifest : {manifest_path}")
+        return
+
+    # -----------------------------------------------------------------------
+    # Mode normal : génère test + dev + history + manifest.json
+    # -----------------------------------------------------------------------
     rng = random.Random(args.seed)
     fake = Faker("fr_FR")
     Faker.seed(args.seed)
-    out = Path(args.out)
 
     suppliers = build_suppliers(rng, fake)
     history = write_history(rng, suppliers, out)
     test_rows = write_text_set("test", N_TEST, N_TEST_INCONSISTENT, N_TEST_ANOMALIES, "F", rng, fake, suppliers, out, history)
     dev_rows = write_text_set("dev", N_DEV, N_DEV_INCONSISTENT, N_DEV_ANOMALIES, "D", rng, fake, suppliers, out, history)
 
-    # Fiche descriptive du jeu de données (à citer dans le rapport : documentation et reproductibilité)
     manifest = {
         "seed": args.seed,
         "currency": CURRENCY,

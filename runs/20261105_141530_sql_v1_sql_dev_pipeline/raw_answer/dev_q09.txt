@@ -1,0 +1,4 @@
+Selon les résultats de la requête, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+1. Ayari Import SA (3 factures)
+2. Dridi Distribution Services (2 factures)

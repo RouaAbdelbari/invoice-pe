@@ -1,0 +1,18 @@
+Pour répondre à la question "Quel fournisseur a le montant TTC total le plus élevé ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT 
+    ds.supplier_name,
+    SUM(fi.total_amount) AS total_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier ds ON fi.supplier_id = ds.supplier_id
+GROUP BY 
+    ds.supplier_name
+ORDER BY 
+    total_ttc DESC
+LIMIT 1;
+```
+
+Cette requête fait les jointures nécessaires entre les tables `fact_invoice`, `dim_supplier`, et `dim_date`, puis elle calcule le montant TTC total pour chaque fournisseur en utilisant la fonction `SUM`. Enfin, elle trie les résultats par montant TTC total dans l'ordre décroissant et limite le résultat à la première ligne, qui correspond au fournisseur avec le montant TTC total le plus élevé.

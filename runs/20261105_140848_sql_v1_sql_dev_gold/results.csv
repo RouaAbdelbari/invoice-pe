@@ -1,0 +1,177 @@
+question_id,question,t_llm_sql,t_guard,t_db,t_llm_answer,sql_strict,sql_lenient,sql_raw_extracted,guard_accepted,guard_reason,sql_executed,execution_ok,execution_error,n_rows,answer_raw,numbers_cited,numbers_unverified,errors
+dev_q01,Combien de factures sont enregistrées au total ?,16.42,0.014,0.93,2.4,False,True,"SELECT COUNT(*) AS total_invoices
+FROM fact_invoice;",True,OK (LIMIT 1000 ajouté),"SELECT COUNT(*) AS total_invoices
+FROM fact_invoice
+LIMIT 1000",True,,1,"Au total, 17 factures sont enregistrées.",17,,
+dev_q02,Quel est le montant TTC total de toutes les factures ?,23.23,0.001,0.17,3.3,False,True,"SELECT SUM(total_amount) AS total_ttc_amount
+FROM fact_invoice;",True,OK (LIMIT 1000 ajouté),"SELECT SUM(total_amount) AS total_ttc_amount
+FROM fact_invoice
+LIMIT 1000",True,,1,"Le montant TTC total de toutes les factures est de 537 272,397 €.","537|272,397","537|272,397","unverified:537,272,397"
+dev_q03,Quels sont les noms de fournisseurs distincts présents dans les factures ?,15.34,0.001,0.05,11.91,False,True,"SELECT DISTINCT dim_supplier.supplier_name
+FROM fact_invoice
+JOIN dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id;",True,OK (LIMIT 1000 ajouté),"SELECT DISTINCT dim_supplier.supplier_name
+FROM fact_invoice
+JOIN dim_supplier ON fact_invoice.supplier_id = dim_supplier.supplier_id
+LIMIT 1000",True,,10,"Les noms de fournisseurs distincts présents dans les factures sont les suivants :
+
+1. Ayari Import SA
+2. Khelifi Pro Group
+3. Dridi Distribution Services
+4. Haddad Pro SUARL
+5. Gharbi Import SA
+6. Jaziri Solutions SUARL
+7. Zouari Tech SUARL
+8. Hammami Tech SARL
+9. Ben Salah Distribution Services
+10. Ferchichi Solutions SARL",1|2|3|4|5|6|7|8|9|10,1|2|3|4|5|6|7|8|9|10,"unverified:1,2,3"
+dev_q04,Quel fournisseur a le montant TTC total le plus élevé ?,21.39,0.002,0.16,5.5,False,True,"SELECT 
+    ds.supplier_name,
+    SUM(fi.total_amount) AS total_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier ds ON fi.supplier_id = ds.supplier_id
+GROUP BY 
+    ds.supplier_name
+ORDER BY 
+    total_ttc DESC
+LIMIT 1;",True,OK,"SELECT 
+    ds.supplier_name,
+    SUM(fi.total_amount) AS total_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier ds ON fi.supplier_id = ds.supplier_id
+GROUP BY 
+    ds.supplier_name
+ORDER BY 
+    total_ttc DESC
+LIMIT 1;",True,,1,"Le fournisseur ayant le montant TTC total le plus élevé est Ayari Import SA, avec un total de 312917.888 TTC.",312917.888,,
+dev_q05,Combien de factures ont été émises au cours du troisième trimestre 2025 (juillet–septembre) ?,24.95,0.001,0.06,4.64,False,True,"SELECT COUNT(*) AS number_of_invoices
+FROM fact_invoice
+JOIN dim_date ON fact_invoice.date_id = dim_date.date_id
+WHERE dim_date.year = 2025
+  AND dim_date.quarter = 3;",True,OK (LIMIT 1000 ajouté),"SELECT COUNT(*) AS number_of_invoices
+FROM fact_invoice
+JOIN dim_date ON fact_invoice.date_id = dim_date.date_id
+WHERE dim_date.year = 2025
+  AND dim_date.quarter = 3
+LIMIT 1000",True,,1,"Selon les résultats de la requête, 6 factures ont été émises au cours du troisième trimestre 2025 (juillet-septembre).",6|2025,2025,unverified:2025
+dev_q06,Quel est le montant HT moyen par facture (arrondi à 3 décimales) ?,25.9,0.001,0.15,4.57,False,True,"SELECT 
+    ROUND(AVG(net_amount), 3) AS average_net_amount
+FROM 
+    fact_invoice;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    ROUND(AVG(net_amount), 3) AS average_net_amount
+FROM 
+    fact_invoice
+LIMIT 1000",True,,1,"Le montant HT moyen par facture, arrondi à 3 décimales, est de 29050.692.",3|29050.692,3,unverified:3
+dev_q07,"Quels taux de TVA sont appliqués dans les factures, et combien de fois chacun est-il utilisé ?",51.1,0.002,0.06,6.5,False,True,"SELECT 
+    dv.vat_rate,
+    COUNT(fi.invoice_key) AS nombre_de_factures
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_vat dv ON fi.vat_id = dv.vat_id
+GROUP BY 
+    dv.vat_rate
+ORDER BY 
+    dv.vat_rate;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    dv.vat_rate,
+    COUNT(fi.invoice_key) AS nombre_de_factures
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_vat dv ON fi.vat_id = dv.vat_id
+GROUP BY 
+    dv.vat_rate
+ORDER BY 
+    dv.vat_rate
+LIMIT 1000",True,,2,"Dans les factures, le taux de TVA de 7% est appliqué dans 10 factures, tandis que le taux de TVA de 19% est appliqué dans 7 factures.",7|10|19|7,19,unverified:19
+dev_q08,Quel est le montant TTC total par mois (année et numéro de mois) ?,38.84,0.001,0.06,21.88,False,True,"SELECT 
+    d.month AS mois,
+    d.year AS annee,
+    SUM(f.total_amount) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.date_id = d.date_id
+GROUP BY 
+    d.month, d.year
+ORDER BY 
+    d.year, d.month;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    d.month AS mois,
+    d.year AS annee,
+    SUM(f.total_amount) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.date_id = d.date_id
+GROUP BY 
+    d.month, d.year
+ORDER BY 
+    d.year, d.month
+LIMIT 1000",True,,6,"Voici le montant TTC total par mois pour l'année 2025 :
+
+- Juillet 2025 : 25 221,78 €
+- Août 2025 : 12 624,97 €
+- Septembre 2025 : 14 838,73 €
+- Octobre 2025 : 458 710,69 €
+- Novembre 2025 : 14 375,37 €
+- Décembre 2025 : 11 500,87 €
+
+Notez que les montants sont arrondis à deux décimales.","2025|2025|25|221,78|2025|12|624,97|2025|14|838,73|2025|458|710,69|2025|14|375,37|2025|11|500,87","25|221,78|624,97|14|838,73|458|710,69|14|375,37|500,87","unverified:25,221,78,624,97"
+dev_q09,Quels fournisseurs ont émis strictement plus d'une facture ?,36.34,0.002,0.16,24.86,False,True,"SELECT 
+    s.supplier_name,
+    COUNT(fi.invoice_key) AS number_of_invoices
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_name
+HAVING 
+    COUNT(fi.invoice_key) > 1;",True,OK (LIMIT 1000 ajouté),"SELECT 
+    s.supplier_name,
+    COUNT(fi.invoice_key) AS number_of_invoices
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_name
+HAVING 
+    COUNT(fi.invoice_key) > 1
+LIMIT 1000",True,,5,"Selon les résultats de la requête, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+- Ayari Import SA (3 factures)
+- Khelifi Pro Group (2 factures)
+- Dridi Distribution Services (3 factures)
+- Haddad Pro SUARL (2 factures)
+- Gharbi Import SA (2 factures)
+
+Cependant, pour répondre à la question de savoir quels fournisseurs ont émis strictement plus d'une facture, nous devons exclure ceux qui ont émis exactement une facture. Par conséquent, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+- Ayari Import SA (3 factures)
+- Khelifi Pro Group (2 factures)
+- Dridi Distribution Services (3 factures)",3|2|3|2|2|3|2|3,,
+dev_q10,"Quelle est la facture ayant le montant TTC le plus élevé, et quel est son fournisseur ?",38.78,0.001,0.06,10.37,False,True,"SELECT 
+    fi.invoice_number AS facture_number,
+    s.supplier_name AS fournisseur_name,
+    fi.total_amount AS montant_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+ORDER BY 
+    fi.total_amount DESC
+LIMIT 1;",True,OK,"SELECT 
+    fi.invoice_number AS facture_number,
+    s.supplier_name AS fournisseur_name,
+    fi.total_amount AS montant_ttc
+FROM 
+    fact_invoice fi
+JOIN 
+    dim_supplier s ON fi.supplier_id = s.supplier_id
+ORDER BY 
+    fi.total_amount DESC
+LIMIT 1;",True,,1,"La facture ayant le montant TTC le plus élevé est la facture D-2025-0016, et son fournisseur est Ayari Import SA. Le montant TTC de cette facture est de 184928.481.",2025|0016|184928.481,2025|0016,"unverified:2025,0016"

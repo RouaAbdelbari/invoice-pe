@@ -1,0 +1,8 @@
+Pour répondre à la question "Combien de factures sont enregistrées au total ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT COUNT(*) AS total_invoices
+FROM fact_invoice;
+```
+
+Cette requête compte le nombre total de lignes dans la table `fact_invoice`, ce qui correspond au nombre total de factures enregistrées.

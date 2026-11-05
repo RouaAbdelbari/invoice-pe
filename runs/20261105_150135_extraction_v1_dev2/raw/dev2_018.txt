@@ -1,0 +1,1 @@
+{"supplier_name": "Gharbi Import SA", "invoice_date": "2025-12-03", "net_amount": 7017.807, "vat_amount": 1333.383, "total_amount": 8351.190}

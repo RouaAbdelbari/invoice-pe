@@ -1,0 +1,11 @@
+Pour répondre à la question "Combien de factures ont été émises au cours du troisième trimestre 2025 (juillet-septembre) ?", vous pouvez utiliser la table `dim_date` pour filtrer les factures émises dans le troisième trimestre de 2025. Voici la requête SQL PostgreSQL correspondante :
+
+```sql
+SELECT COUNT(*) AS number_of_invoices
+FROM fact_invoice
+JOIN dim_date ON fact_invoice.date_id = dim_date.date_id
+WHERE dim_date.year = 2025
+  AND dim_date.quarter = 3;
+```
+
+Cette requête joint la table `fact_invoice` avec la table `dim_date` sur la clé `date_id` et filtre les lignes pour inclure uniquement celles où l'année est 2025 et le trimestre est 3 (juillet-septembre). Enfin, elle compte le nombre de factures (`COUNT(*)`) qui correspondent à ces critères.

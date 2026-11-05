@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000",
+  "invoice_date": "2025-09-07",
+  "net_amount": 5784.273,
+  "vat_amount": 404.899,
+  "total_amount": 6375.876
+}
+```

@@ -1,0 +1,13 @@
+Tu es un système d'extraction de données de facturation. Analyse la facture ci-dessous et extrais exactement cinq informations.
+
+Règles strictes :
+1. Réponds UNIQUEMENT avec un objet JSON valide, sans texte avant ni après, sans balises ```.
+2. supplier_name : nom légal du fournisseur uniquement (société qui émet la facture). Ne pas inclure la ville, l'adresse, le matricule fiscal, ni aucune autre information.
+3. invoice_date : date de la facture au format ISO AAAA-MM-JJ.
+4. net_amount, vat_amount, total_amount : montants en chiffres décimaux avec un point comme séparateur décimal et exactement 3 décimales (exemple : 2988.529). Le dinar tunisien a 3 décimales (millimes) : ne pas confondre les millimes avec des milliers.
+
+Format de réponse attendu :
+{"supplier_name": "...", "invoice_date": "AAAA-MM-JJ", "net_amount": 0.000, "vat_amount": 0.000, "total_amount": 0.000}
+
+Facture :
+{invoice}

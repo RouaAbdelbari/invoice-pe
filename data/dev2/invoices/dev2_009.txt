@@ -1,0 +1,13 @@
+Facture / Invoice      Réf: X-2025-0009
+Émise le / Issued on: 11/11/2025
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Blanchet
+
+| Article                        | Qté |       Montant |
+| Huile moteur                   |  10 |      2509.260 |
+| Filtres                        |   4 |      1414.196 |
+
+| Base imposable / Net amount | 3923.456 |
+| Montant TVA / VAT amount    | 274.642 |
+| TOTAL TTC                   | 4198.098 |
+Devise : TND

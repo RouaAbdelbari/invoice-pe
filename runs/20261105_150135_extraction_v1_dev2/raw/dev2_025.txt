@@ -1,0 +1,1 @@
+{"supplier_name": "Mansouri Trading SA", "invoice_date": "2025-08-10", "net_amount": 5220.480, "vat_amount": 678.662, "total_amount": 5899.142}

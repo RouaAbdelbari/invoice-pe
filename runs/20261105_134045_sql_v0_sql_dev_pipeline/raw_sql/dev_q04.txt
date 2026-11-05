@@ -1,0 +1,25 @@
+Pour répondre à la question "Quel fournisseur a le montant TTC total le plus élevé ?", vous pouvez utiliser la table `fact_invoice` qui contient les informations sur les factures. Vous devrez également joindre la table `dim_supplier` pour obtenir les informations sur les fournisseurs. Voici une requête SQL PostgreSQL qui répond à cette question :
+
+```sql
+SELECT 
+    s.supplier_id,
+    s.supplier_name,
+    SUM(f.ttc_amount) AS total_ttc_amount
+FROM 
+    fact_invoice f
+JOIN 
+    dim_supplier s ON f.supplier_id = s.supplier_id
+GROUP BY 
+    s.supplier_id, s.supplier_name
+ORDER BY 
+    total_ttc_amount DESC
+LIMIT 1;
+```
+
+### Explication de la requête :
+1. **Tables Joindes** : La table `fact_invoice` est jointe avec la table `dim_supplier` sur la colonne `supplier_id`.
+2. **Calcul du Montant TTC Total** : La somme du montant TTC (`ttc_amount`) pour chaque fournisseur est calculée.
+3. **Group By** : Les résultats sont groupés par `supplier_id` et `supplier_name` pour obtenir le montant TTC total par fournisseur.
+4. **Ordre et Limite** : Les résultats sont triés par `total_ttc_amount` dans l'ordre décroissant et limités à 1 pour obtenir le fournisseur avec le montant TTC total le plus élevé.
+
+Cette requête retournera le fournisseur ayant le montant TTC total le plus élevé.

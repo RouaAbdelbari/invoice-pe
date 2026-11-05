@@ -1,0 +1,1 @@
+Dans les factures, le taux de TVA de 7% est appliqué dans 10 factures, tandis que le taux de TVA de 19% est appliqué dans 7 factures.

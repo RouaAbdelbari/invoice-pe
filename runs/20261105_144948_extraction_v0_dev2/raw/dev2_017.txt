@@ -1,0 +1,11 @@
+```json
+{
+  "supplier_name": "Ben Salah Distribution Services, Nabeul",
+  "invoice_date": "2025-08-30",
+  "net_amount": 2969.35,
+  "vat_amount": 207.86,
+  "total_amount": 3177.20
+}
+```
+
+Note: J'ai arrondi la valeur de la TVA à deux décimales pour une présentation plus claire, bien que la valeur originale soit 207,855.

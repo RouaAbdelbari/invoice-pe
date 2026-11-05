@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: X-2025-0007
+Issue date: 19/12/2025
+
+From: Jaziri Solutions SUARL (Bizerte, Tunisia) - Tax ID 2166941B/A/M/000
+Bill to: Chauvin
+
+Items
+- Cartouche d'encre | qty 10 | unit 967,205 | 9 672,050
+- Stylos (boîte de 50) | qty 7 | unit 1 569,594 | 10 987,158
+
+Subtotal: 20 659,208 TND
+VAT (19%): 3 925,250 TND
+Amount due: 24 592,214 TND
+
+Payment terms: net 60 days. Thank you for your business.

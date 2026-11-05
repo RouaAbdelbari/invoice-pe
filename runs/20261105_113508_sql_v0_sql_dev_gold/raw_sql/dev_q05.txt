@@ -1,0 +1,16 @@
+Pour répondre à cette question, nous devons sélectionner les factures qui ont été émises entre le 1er juillet 2025 et le 30 septembre 2025. Nous pouvons utiliser la table `dim_date` pour filtrer les dates et la table `fact_invoice` pour compter le nombre de factures. Voici une requête SQL PostgreSQL qui répond à cette question :
+
+```sql
+SELECT COUNT(*)
+FROM fact_invoice fi
+JOIN dim_date dd ON fi.invoice_date = dd.date_key
+WHERE dd.year = 2025
+  AND dd.quarter = 3;
+```
+
+### Explication de la requête :
+1. **JOIN** : Nous joignons la table `fact_invoice` avec la table `dim_date` en utilisant la clé étrangère `invoice_date` de `fact_invoice` et la clé `date_key` de `dim_date`.
+2. **WHERE** : Nous filtrons les dates pour qu'elles soient comprises entre le 1er juillet 2025 et le 30 septembre 2025. Nous utilisons les colonnes `year` et `quarter` de la table `dim_date` pour ce faire.
+3. **COUNT(*)** : Nous comptons le nombre de factures qui correspondent aux critères de filtre.
+
+Assurez-vous que les noms des colonnes et des tables correspondent exactement à ceux de votre schéma de base de données. Si les noms sont différents, vous devrez ajuster la requête en conséquence.

@@ -1,0 +1,25 @@
+Pour répondre à la question "Quel est le montant TTC total par mois (année et numéro de mois) ?", vous pouvez utiliser la requête SQL suivante :
+
+```sql
+SELECT 
+    d.month AS mois,
+    d.year AS annee,
+    SUM(f.total_amount) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.date_id = d.date_id
+GROUP BY 
+    d.month, d.year
+ORDER BY 
+    d.year, d.month;
+```
+
+Cette requête fait les jointures nécessaires entre les tables `fact_invoice`, `dim_date`, et `dim_supplier`, puis elle calcule le montant TTC total par mois et année. Voici une explication détaillée :
+
+1. **Jointures** : Les jointures sont effectuées entre `fact_invoice` et `dim_date` sur la colonne `date_id`.
+2. **Group By** : Les résultats sont regroupés par mois et année pour calculer le montant TTC total par mois et année.
+3. **Sum** : La fonction `SUM` est utilisée pour calculer la somme du montant TTC (`total_amount`) pour chaque groupe.
+4. **OrderBy** : Les résultats sont triés par année et mois pour une meilleure lisibilité.
+
+Cette requête vous donnera un récapitulatif du montant TTC total par mois et année, ce qui vous permettra de voir la distribution des factures par période.

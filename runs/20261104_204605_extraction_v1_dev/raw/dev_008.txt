@@ -1,0 +1,1 @@
+{"supplier_name": "Haddad Pro SUARL", "invoice_date": "2025-10-17", "net_amount": 56346.088, "vat_amount": 3944.226, "total_amount": 60290.314}

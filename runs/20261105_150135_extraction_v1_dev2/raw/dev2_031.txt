@@ -1,0 +1,1 @@
+{"supplier_name": "Ben Salah Distribution Services", "invoice_date": "2025-07-23", "net_amount": 58628.592, "vat_amount": 4104.001, "total_amount": 62732.593}

@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Mejri Trading & Fils",
+  "invoice_date": "December 25, 2025",
+  "net_amount": 25791.164,
+  "vat_amount": 3352.851,
+  "total_amount": 29144.015
+}
+```

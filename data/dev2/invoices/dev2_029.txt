@@ -1,0 +1,15 @@
+INVOICE
+Invoice no.: X-2025-0029
+Issue date: 20 août 2024
+
+From: Ferchichi Solutions SARL (Nabeul, Tunisia) - Tax ID 5918715X/A/M/000
+Bill to: Perrier
+
+Items
+- Disque SSD 1 To | qty 1 | unit 752.540 | 752.540
+
+Subtotal: 752.540 TND
+VAT (19%): 142.983 TND
+Amount due: 895.523 TND
+
+Payment terms: net 45 days. Thank you for your business.

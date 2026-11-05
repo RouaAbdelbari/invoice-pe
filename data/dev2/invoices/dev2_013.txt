@@ -1,0 +1,18 @@
+INVOICE
+Invoice no.: X-2025-0013
+Issue date: 2025-11-01
+
+From: Mejri Trading & Fils (Sousse, Tunisia) - Tax ID 7210606M/A/M/000
+Bill to: David S.A.
+
+Items
+- Prestation de conseil | qty 9 | unit 3 241,506 | 29 173,554
+- Audit qualité | qty 2 | unit 3 369,675 | 6 739,350
+- Formation (journée) | qty 1 | unit 3 634,185 | 3 634,185
+- Nettoyage des locaux | qty 6 | unit 2 270,006 | 13 620,036
+
+Subtotal: 53 167,125 TND
+VAT (13%): 6 911,726 TND
+Amount due: 60 078,851 TND
+
+Payment terms: net 15 days. Thank you for your business.

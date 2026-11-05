@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Khelifi Pro Group, Sousse",
+  "invoice_date": "2025-08-28",
+  "net_amount": 1561.725,
+  "vat_amount": 296.728,
+  "total_amount": 1858.453
+}
+```

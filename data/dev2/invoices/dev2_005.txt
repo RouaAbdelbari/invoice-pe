@@ -1,0 +1,21 @@
+Khelifi Pro Group
+59, chemin Marchal, Sousse
+Matricule fiscal : 8090293L/A/M/000
+
+FACTURE N° X-2025-0005
+Date : 17/10/2025
+
+Client : Hervé
+71, boulevard de Didier
+
+Désignation                          Qté      P.U.            Montant
+  Transport de marchandises          5  x      420.979  =     2,104.895
+  Palettes                           2  x      208.376  =       416.752
+  Stockage mensuel                   3  x      284.818  =       854.454
+  Transport de marchandises          2  x      150.064  =       300.128
+
+Total HT (TND)      : 3,676.229
+TVA 19 %             : 698.484
+Total TTC (TND)     : 4,374.713
+
+Conditions : paiement à 30 jours.

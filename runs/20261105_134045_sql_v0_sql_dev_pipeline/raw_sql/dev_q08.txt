@@ -1,0 +1,39 @@
+Pour répondre à la question "Quel est le montant TTC total par mois (année et numéro de mois) ?", vous pouvez utiliser la table `fact_invoice` qui semble contenir les informations sur les factures. Vous devrez également utiliser la table `dim_date` pour obtenir les informations sur les dates et `dim_vat` pour obtenir les informations sur la TVA. Voici une requête SQL PostgreSQL qui répond à cette question :
+
+```sql
+SELECT 
+    d.year AS annee,
+    d.month AS mois,
+    SUM(f.net_amount * (1 + v.rate / 100)) AS montant_ttc_total
+FROM 
+    fact_invoice f
+JOIN 
+    dim_date d ON f.invoice_date_id = d.date_id
+JOIN 
+    dim_vat v ON f.vat_id = v.vat_id
+GROUP BY 
+    d.year, d.month
+ORDER BY 
+    d.year, d.month;
+```
+
+### Explication de la requête :
+1. **Tables utilisées**:
+   - `fact_invoice`: Table contenant les informations sur les factures.
+   - `dim_date`: Table contenant les informations sur les dates.
+   - `dim_vat`: Table contenant les informations sur la TVA.
+
+2. **Jointures**:
+   - `JOIN fact_invoice f ON f.invoice_date_id = d.date_id`: Jointure entre la table `fact_invoice` et `dim_date` pour obtenir les informations sur les dates.
+   - `JOIN dim_vat v ON f.vat_id = v.vat_id`: Jointure entre la table `fact_invoice` et `dim_vat` pour obtenir les informations sur la TVA.
+
+3. **Calcul du montant TTC**:
+   - `SUM(f.net_amount * (1 + v.rate / 100)) AS montant_ttc_total`: Calcul du montant TTC en ajoutant la TVA au montant net de chaque facture.
+
+4. **Groupement**:
+   - `GROUP BY d.year, d.month`: Groupe les résultats par année et mois.
+
+5. **Ordre des résultats**:
+   - `ORDER BY d.year, d.month`: Trie les résultats par année et mois.
+
+Cette requête retournera le montant TTC total par mois pour chaque année.

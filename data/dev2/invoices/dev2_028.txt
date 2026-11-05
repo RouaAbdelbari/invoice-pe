@@ -1,0 +1,15 @@
+Facture / Invoice      Réf: X-2025-0028
+Émise le / Issued on: 13/12/2025
+Vendeur / Seller: Dridi Distribution Services, Bizerte
+Acheteur / Buyer: Guillou
+
+| Article                        | Qté |       Montant |
+| Huile moteur                   |   6 |     2,361.828 |
+| Filtres                        |   3 |     1,099.782 |
+| Gasoil (litres)                |   3 |       733.206 |
+| Maintenance groupe électrogène |   3 |       475.575 |
+
+| Base imposable / Net amount | 4,670.391 |
+| Montant TVA / VAT amount    | 326.927 |
+| TOTAL TTC                   | 4,997.318 |
+Devise : TND

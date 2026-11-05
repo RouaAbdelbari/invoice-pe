@@ -1,0 +1,16 @@
+Facture / Invoice      Réf: X-2025-0018
+Émise le / Issued on: December 3, 2025
+Vendeur / Seller: Gharbi Import SA, Sousse
+Acheteur / Buyer: Petitjean
+
+| Article                        | Qté |       Montant |
+| Transport de marchandises      |   7 |     1 713,733 |
+| Location de camion             |  10 |     2 888,010 |
+| Livraison express              |   2 |       711,878 |
+| Emballage carton               |   5 |     1 333,570 |
+| Palettes                       |   1 |       370,616 |
+
+| Base imposable / Net amount | 7 017,807 |
+| Montant TVA / VAT amount    | 1 333,383 |
+| TOTAL TTC                   | 8 351,190 |
+Devise : TND

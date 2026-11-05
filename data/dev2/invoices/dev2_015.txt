@@ -1,0 +1,19 @@
+INVOICE
+Invoice no.: X-2025-0015
+Issue date: 2025-09-07
+
+From: Dridi Distribution Services (Bizerte, Tunisia) - Tax ID 2197935W/A/M/000
+Bill to: Alves
+
+Items
+- Maintenance groupe électrogène | qty 2 | unit 384,462 | 768,924
+- Gasoil (litres) | qty 7 | unit 201,383 | 1 409,681
+- Intervention technicien | qty 1 | unit 377,734 | 377,734
+- Intervention technicien | qty 3 | unit 343,783 | 1 031,349
+- Gasoil (litres) | qty 9 | unit 244,065 | 2 196,585
+
+Subtotal: 5 784,273 TND
+VAT (7%): 404,899 TND
+Amount due: 6 375,876 TND
+
+Payment terms: net 45 days. Thank you for your business.

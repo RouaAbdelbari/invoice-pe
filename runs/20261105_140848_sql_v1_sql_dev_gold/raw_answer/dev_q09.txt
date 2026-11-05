@@ -1,0 +1,13 @@
+Selon les résultats de la requête, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+- Ayari Import SA (3 factures)
+- Khelifi Pro Group (2 factures)
+- Dridi Distribution Services (3 factures)
+- Haddad Pro SUARL (2 factures)
+- Gharbi Import SA (2 factures)
+
+Cependant, pour répondre à la question de savoir quels fournisseurs ont émis strictement plus d'une facture, nous devons exclure ceux qui ont émis exactement une facture. Par conséquent, les fournisseurs qui ont émis strictement plus d'une facture sont :
+
+- Ayari Import SA (3 factures)
+- Khelifi Pro Group (2 factures)
+- Dridi Distribution Services (3 factures)

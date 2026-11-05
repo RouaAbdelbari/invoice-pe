@@ -1,0 +1,16 @@
+INVOICE
+Invoice no.: X-2025-0020
+Issue date: 29 juillet 2025
+
+From: Haddad Pro SUARL (Nabeul, Tunisia) - Tax ID 4684531Y/A/M/000
+Bill to: Didier
+
+Items
+- Agrafeuse | qty 2 | unit 1545.707 | 3091.414
+- Cartouche d'encre | qty 9 | unit 2135.102 | 19215.918
+
+Subtotal: 22307.332 TND
+VAT (7%): 1561.513 TND
+Amount due: 23868.845 TND
+
+Payment terms: net 15 days. Thank you for your business.

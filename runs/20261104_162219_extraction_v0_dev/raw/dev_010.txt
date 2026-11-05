@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Hammami Tech SARL",
+  "invoice_date": "October 17, 2025",
+  "net_amount": 1786.417,
+  "vat_amount": 493.924,
+  "total_amount": 2280.341
+}
+```

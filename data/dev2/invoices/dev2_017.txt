@@ -1,0 +1,12 @@
+Facture / Invoice      Réf: X-2025-0017
+Émise le / Issued on: 30 août 2025
+Vendeur / Seller: Ben Salah Distribution Services, Nabeul
+Acheteur / Buyer: Vidal
+
+| Article                        | Qté |       Montant |
+| Classeurs (lot de 10)          |   2 |     2 969,350 |
+
+| Base imposable / Net amount | 2 969,350 |
+| Montant TVA / VAT amount    | 207,855 |
+| TOTAL TTC                   | 3 177,205 |
+Devise : TND

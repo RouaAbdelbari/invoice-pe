@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Ferchichi Solutions SARL",
+  "invoice_date": "20 août 2024",
+  "net_amount": 752.540,
+  "vat_amount": 142.983,
+  "total_amount": 895.523
+}
+```

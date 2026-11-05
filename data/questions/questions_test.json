@@ -1,0 +1,263 @@
+{
+  "description": "25 questions de test — NE SERVENT JAMAIS à concevoir les prompts. À exécuter uniquement pour l'évaluation finale, après validation de toutes les versions de prompt sur questions_dev.",
+  "schema_note": "Remplacer {schema} par 'gold' ou 'pipeline' selon la cible.",
+  "sensitive_to_coverage": {
+    "amount_x1000": ["test_q02","test_q06","test_q08","test_q16","test_q17","test_q19","test_q21","test_q22","test_q24"],
+    "supplier_name": ["test_q06","test_q07","test_q08","test_q12","test_q13","test_q20","test_q22","test_q24","test_q25"],
+    "rejection":     ["test_q01","test_q02","test_q05","test_q09","test_q10","test_q14","test_q17","test_q19","test_q23"],
+    "none":          ["test_q03","test_q04","test_q11","test_q15","test_q16_bis","test_q18"]
+  },
+  "notes_coverage": "Les étiquettes sensitive_to sont des hypothèses a priori. L'évaluation dira lesquelles se vérifient empiriquement.",
+  "questions": [
+    {
+      "id": "test_q01",
+      "question": "Combien de factures distinctes sont enregistrées ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["rejection"],
+      "notes": "Pas d'ex æquo. gold=17 (3 incohérentes exclues), pipeline=17 valides sur ce run."
+    },
+    {
+      "id": "test_q02",
+      "question": "Quel est le montant TTC total (en TND, arrondi à 3 décimales) de toutes les factures ?",
+      "reference_sql": "SELECT ROUND(SUM(total_amount), 3) AS total_ttc FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "ROUND à 3 décimales. Deux factures ×1000 dans pipeline (dev_002, dev_019) gonflent massivement la somme. Les 3 rejetées manquent dans pipeline."
+    },
+    {
+      "id": "test_q03",
+      "question": "Quels taux de TVA sont appliqués dans les factures ?",
+      "reference_sql": "SELECT DISTINCT dv.vat_rate FROM {schema}.fact_invoice fi JOIN {schema}.dim_vat dv USING (vat_id) ORDER BY dv.vat_rate;",
+      "category": "filtre",
+      "expected_answer_type": "liste",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin. Le taux est recalculé et arrondi au taux légal le plus proche dans les deux schémas (snap_to_legal_vat). Résultat stable : [0.07, 0.13, 0.19]. Pas d'ex æquo."
+    },
+    {
+      "id": "test_q04",
+      "question": "Quel est le taux de TVA le plus élevé appliqué dans les factures ?",
+      "reference_sql": "SELECT MAX(dv.vat_rate) AS taux_max FROM {schema}.fact_invoice fi JOIN {schema}.dim_vat dv USING (vat_id);",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin. MAX sur vat_rate — stable à 0.19 dans les deux schémas grâce à snap_to_legal_vat."
+    },
+    {
+      "id": "test_q05",
+      "question": "Combien de fournisseurs différents ont émis au moins une facture ?",
+      "reference_sql": "SELECT COUNT(DISTINCT supplier_id) AS n_fournisseurs FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["supplier_name", "rejection"],
+      "notes": "COUNT DISTINCT sur supplier_id de fact_invoice (pas de dim_supplier). Dans pipeline, un nom fragmenté crée un supplier_id supplémentaire, gonflant le comptage. Les fiches rejetées manquent."
+    },
+    {
+      "id": "test_q06",
+      "question": "Quel fournisseur a le montant HT total le plus élevé (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT ds.supplier_name, ROUND(SUM(fi.net_amount), 3) AS total_ht FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name ORDER BY total_ht DESC, ds.supplier_name ASC LIMIT 1;",
+      "category": "classement",
+      "expected_answer_type": "table",
+      "measure": "HT",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "LIMIT 1, ex æquo sur total_ht triés secondairement par nom. Erreur ×1000 peut faire passer une facture en tête. Nom fragmenté dilue les totaux du fournisseur concerné."
+    },
+    {
+      "id": "test_q07",
+      "question": "Quels fournisseurs ont le plus grand nombre de factures, en incluant tous les ex æquo à la première place ?",
+      "reference_sql": "WITH ranked AS (SELECT ds.supplier_name, COUNT(*) AS n_factures, RANK() OVER (ORDER BY COUNT(*) DESC) AS rnk FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name) SELECT supplier_name, n_factures FROM ranked WHERE rnk = 1 ORDER BY supplier_name;",
+      "category": "classement",
+      "expected_answer_type": "table",
+      "measure": "count",
+      "sensitive_to": ["supplier_name"],
+      "notes": "RANK() inclut tous les ex æquo en première position. Tri final par nom pour déterminisme. Un fournisseur fragmenté perd des factures dans son groupe."
+    },
+    {
+      "id": "test_q08",
+      "question": "Quel est le montant TTC total par fournisseur (en TND, arrondi à 3 décimales), trié par nom de fournisseur ?",
+      "reference_sql": "SELECT ds.supplier_name, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name ORDER BY ds.supplier_name;",
+      "category": "groupement",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "Tri par supplier_name (pas d'ex æquo). Erreur ×1000 gonfle une ligne. Nom fragmenté crée une ligne supplémentaire."
+    },
+    {
+      "id": "test_q09",
+      "question": "Quel est le montant TTC total par trimestre de l'année 2025 (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT dd.year, dd.quarter, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 GROUP BY dd.year, dd.quarter ORDER BY dd.year, dd.quarter;",
+      "category": "date/trimestre",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "Filtre 2025 explicite. Erreur ×1000 déforme le trimestre concerné. Fiches rejetées manquent du total."
+    },
+    {
+      "id": "test_q10",
+      "question": "Combien de factures ont été émises au cours du quatrième trimestre 2025 (octobre–décembre) ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 AND dd.quarter = 4;",
+      "category": "date/trimestre",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["rejection"],
+      "notes": "Période explicite : Q4 2025. Les fiches rejetées (dates non extraites) manquent dans pipeline."
+    },
+    {
+      "id": "test_q11",
+      "question": "Sur combien de mois différents de l'année 2025 s'étalent les factures ?",
+      "reference_sql": "SELECT COUNT(DISTINCT dd.month) AS n_mois FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin. COUNT DISTINCT sur les numéros de mois — stable même si des factures manquent, tant qu'aucun mois n'est entièrement éliminé. Insensible aux montants."
+    },
+    {
+      "id": "test_q12",
+      "question": "Quels fournisseurs ont un montant TTC cumulé supérieur à 50 000 TND (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT ds.supplier_name, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name HAVING SUM(fi.total_amount) > 50000 ORDER BY total_ttc DESC, ds.supplier_name ASC;",
+      "category": "filtre",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["supplier_name"],
+      "notes": "Seuil cumulé explicite. Ex æquo sur total_ttc triés secondairement par nom. Nom fragmenté peut faire passer un fournisseur sous le seuil."
+    },
+    {
+      "id": "test_q13",
+      "question": "Quel est le montant TTC total (en TND, arrondi à 3 décimales) des factures d'Ayari Import SA émises au troisième trimestre 2025 (juillet–septembre) ?",
+      "reference_sql": "SELECT ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) JOIN {schema}.dim_date dd USING (date_id) WHERE ds.supplier_name = 'Ayari Import SA' AND dd.year = 2025 AND dd.quarter = 3;",
+      "category": "filtre",
+      "expected_answer_type": "nombre",
+      "measure": "TTC",
+      "sensitive_to": ["supplier_name"],
+      "notes": "Filtre nominatif : le nom exact 'Ayari Import SA' doit correspondre. Dans pipeline, si le LLM a extrait 'Ayari Import SA, Tunis', la requête retourne 0 (nom non trouvé). Periode Q3 2025 explicite."
+    },
+    {
+      "id": "test_q14",
+      "question": "Combien de factures ont été émises par Dridi Distribution Services ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) WHERE ds.supplier_name = 'Dridi Distribution Services';",
+      "category": "filtre",
+      "expected_answer_type": "nombre",
+      "measure": "count",
+      "sensitive_to": ["supplier_name", "rejection"],
+      "notes": "Filtre nominatif : nom exact 'Dridi Distribution Services'. Dans pipeline, un nom fragmenté donne un résultat inférieur ou nul. Les fiches rejetées manquent aussi."
+    },
+    {
+      "id": "test_q15",
+      "question": "Combien de factures appliquent un taux de TVA de 7 % ?",
+      "reference_sql": "SELECT COUNT(*) AS n_factures FROM {schema}.fact_invoice fi JOIN {schema}.dim_vat dv USING (vat_id) WHERE dv.vat_rate = 0.07;",
+      "category": "filtre",
+      "expected_answer_type": "nombre",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin. Le taux 0.07 est issu de snap_to_legal_vat, stable dans les deux schémas. Insensible aux erreurs de montants et aux noms."
+    },
+    {
+      "id": "test_q16",
+      "question": "Quel est le montant HT total par taux de TVA (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT dv.vat_rate, ROUND(SUM(fi.net_amount), 3) AS total_ht FROM {schema}.fact_invoice fi JOIN {schema}.dim_vat dv USING (vat_id) GROUP BY dv.vat_rate ORDER BY dv.vat_rate;",
+      "category": "groupement",
+      "expected_answer_type": "table",
+      "measure": "HT",
+      "sensitive_to": ["amount_x1000"],
+      "notes": "ROUND à 3 décimales. Erreur ×1000 gonfle le HT total du groupe de taux concerné."
+    },
+    {
+      "id": "test_q17",
+      "question": "Quelle est la date et le montant TTC de la facture la plus récente ?",
+      "reference_sql": "SELECT fi.invoice_id, dd.full_date, fi.total_amount FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) ORDER BY dd.full_date DESC, fi.invoice_id ASC LIMIT 1;",
+      "category": "date/trimestre",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "LIMIT 1. Ex æquo sur full_date triés secondairement par invoice_id. Fiches rejetées (dates non extraites) absentes de pipeline — peut changer la facture la plus récente."
+    },
+    {
+      "id": "test_q18",
+      "question": "Combien de taux de TVA distincts sont appliqués dans les factures ?",
+      "reference_sql": "SELECT COUNT(DISTINCT vat_id) AS n_taux FROM {schema}.fact_invoice;",
+      "category": "agregat",
+      "expected_answer_type": "nombre",
+      "measure": "none",
+      "sensitive_to": ["none"],
+      "notes": "Question témoin. Résultat stable à 3 grâce à snap_to_legal_vat. Insensible aux montants, noms et rejets."
+    },
+    {
+      "id": "test_q19",
+      "question": "Quel est le montant TTC total (en TND, arrondi à 3 décimales) des factures émises en octobre 2025 ?",
+      "reference_sql": "SELECT ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 AND dd.month = 10;",
+      "category": "date/trimestre",
+      "expected_answer_type": "nombre",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "rejection"],
+      "notes": "Période explicite : octobre 2025. Erreur ×1000 sur une facture d'octobre changerait massivement la somme."
+    },
+    {
+      "id": "test_q20",
+      "question": "Quels fournisseurs n'ont émis qu'une seule facture, triés par ordre alphabétique ?",
+      "reference_sql": "SELECT ds.supplier_name FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name HAVING COUNT(*) = 1 ORDER BY ds.supplier_name;",
+      "category": "filtre",
+      "expected_answer_type": "liste",
+      "measure": "count",
+      "sensitive_to": ["supplier_name"],
+      "notes": "Tri alphabétique explicite. Un fournisseur avec deux factures dont l'une a un nom fragmenté apparaît deux fois avec 1 facture chacun, changeant la liste."
+    },
+    {
+      "id": "test_q21",
+      "question": "Quel est le montant TTC total par fournisseur et par trimestre de l'année 2025 (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT ds.supplier_name, dd.year, dd.quarter, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 GROUP BY ds.supplier_name, dd.year, dd.quarter ORDER BY ds.supplier_name, dd.year, dd.quarter;",
+      "category": "jointure",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "Double jointure supplier + date. Filtre 2025. Noms fragmentés créent des lignes supplémentaires dans pipeline."
+    },
+    {
+      "id": "test_q22",
+      "question": "Quel fournisseur a le montant HT moyen par facture le plus élevé (en TND, arrondi à 3 décimales) ?",
+      "reference_sql": "SELECT ds.supplier_name, ROUND(AVG(fi.net_amount), 3) AS moyenne_ht FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) GROUP BY ds.supplier_name ORDER BY moyenne_ht DESC, ds.supplier_name ASC LIMIT 1;",
+      "category": "classement",
+      "expected_answer_type": "table",
+      "measure": "HT",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "LIMIT 1. Ex æquo sur moyenne_ht triés secondairement par nom. Erreur ×1000 gonfle la moyenne et peut faire passer ce fournisseur en tête."
+    },
+    {
+      "id": "test_q23",
+      "question": "Quel est le mois de l'année 2025 ayant le plus grand nombre de factures, en incluant tous les ex æquo ?",
+      "reference_sql": "WITH ranked AS (SELECT dd.year, dd.month, dd.month_name, COUNT(*) AS n_factures, RANK() OVER (ORDER BY COUNT(*) DESC) AS rnk FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 GROUP BY dd.year, dd.month, dd.month_name) SELECT year, month, month_name, n_factures FROM ranked WHERE rnk = 1 ORDER BY month;",
+      "category": "date/trimestre",
+      "expected_answer_type": "table",
+      "measure": "count",
+      "sensitive_to": ["rejection"],
+      "notes": "RANK() inclut tous les ex æquo au rang 1. Tri final par numéro de mois. Fiches rejetées (dates absentes) peuvent changer le mois dominant."
+    },
+    {
+      "id": "test_q24",
+      "question": "Quel est le nombre de factures et le montant TTC total par mois de l'année 2025 (en TND, arrondi à 3 décimales), trié par montant TTC décroissant ?",
+      "reference_sql": "SELECT dd.year, dd.month, dd.month_name, COUNT(*) AS n_factures, ROUND(SUM(fi.total_amount), 3) AS total_ttc FROM {schema}.fact_invoice fi JOIN {schema}.dim_date dd USING (date_id) WHERE dd.year = 2025 GROUP BY dd.year, dd.month, dd.month_name ORDER BY total_ttc DESC, dd.month ASC;",
+      "category": "date/trimestre",
+      "expected_answer_type": "table",
+      "measure": "TTC",
+      "sensitive_to": ["amount_x1000", "supplier_name"],
+      "notes": "Filtre 2025. Tri primaire par total_ttc DESC, secondaire par mois ASC pour lever les ex æquo. Erreur ×1000 déforme un mois et change le classement."
+    },
+    {
+      "id": "test_q25",
+      "question": "Quels fournisseurs ont facturé à un taux de TVA supérieur à 7 % (liste des noms distincts, triés alphabétiquement) ?",
+      "reference_sql": "SELECT DISTINCT ds.supplier_name FROM {schema}.fact_invoice fi JOIN {schema}.dim_supplier ds USING (supplier_id) JOIN {schema}.dim_vat dv USING (vat_id) WHERE dv.vat_rate > 0.07 ORDER BY ds.supplier_name;",
+      "category": "filtre",
+      "expected_answer_type": "liste",
+      "measure": "none",
+      "sensitive_to": ["supplier_name"],
+      "notes": "DISTINCT + tri alphabétique pour déterminisme. Dans pipeline, un nom fragmenté apparaît sous une variante différente dans la liste."
+    }
+  ]
+}

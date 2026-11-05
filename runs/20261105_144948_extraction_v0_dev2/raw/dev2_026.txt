@@ -1,0 +1,9 @@
+```json
+{
+  "supplier_name": "Hammami Tech SARL, Nabeul",
+  "invoice_date": "2025-11-14",
+  "net_amount": 2134.679,
+  "vat_amount": 405.589,
+  "total_amount": 2540.268
+}
+```

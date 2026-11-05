@@ -1,0 +1,20 @@
+Gharbi Import SA
+10, avenue de Millet, Sousse
+Matricule fiscal : 2694522N/A/M/000
+
+FACTURE N° X-2025-0032
+Date : 26 août 2025
+
+Client : Roux SARL
+67, avenue Turpin
+
+Désignation                          Qté      P.U.            Montant
+  Palettes                           7  x    3,430.695  =    24,014.865
+  Emballage carton                   7  x    1,836.607  =    12,856.249
+  Stockage mensuel                  10  x    2,980.404  =    29,804.040
+
+Total HT (TND)      : 66,675.154
+TVA 19 %             : 12,668.279
+Total TTC (TND)     : 79,343.433
+
+Conditions : paiement à 15 jours.

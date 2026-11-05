@@ -1,0 +1,1 @@
+{"supplier_name": "Hammami Tech SARL", "invoice_date": "2025-08-20", "net_amount": 3573.508, "vat_amount": 678.967, "total_amount": 4252.475}

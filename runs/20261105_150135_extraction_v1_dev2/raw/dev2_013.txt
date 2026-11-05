@@ -1,0 +1,1 @@
+{"supplier_name": "Mejri Trading & Fils", "invoice_date": "2025-11-01", "net_amount": 53167.125, "vat_amount": 6911.726, "total_amount": 60078.851}

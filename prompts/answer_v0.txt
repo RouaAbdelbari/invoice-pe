@@ -1,0 +1,3 @@
+Réponds en français à la question suivante en t'appuyant uniquement sur les résultats de requête ci-dessous.
+Question : {question}
+Résultats : {rows}
